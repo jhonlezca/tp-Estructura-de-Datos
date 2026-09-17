@@ -1,0 +1,1361 @@
+{
+  "metadatos": {
+    "liga": "Liga Profesional de Fútbol",
+    "pais": "Argentina",
+    "temporada": 2026
+  },
+  "equipos": [
+    {
+      "id": "ALD",
+      "nombre": "Club Atlético Aldosivi",
+      "estadio": "José María Minella",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "ALD_001",
+          "nombre": "Sebastián",
+          "apellido": "Moyano",
+          "dorsal": 17,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "ALD_002",
+          "nombre": "Leonardo",
+          "apellido": "Sigali",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "ALD_003",
+          "nombre": "Nicolas",
+          "apellido": "Linares",
+          "dorsal": 5,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "ALD_004",
+          "nombre": "Andres",
+          "apellido": "Vombergar",
+          "dorsal": 29,
+          "posicion": "Delantero",
+          "nacionalidad": "Eslovenia"
+        }
+      ]
+    },
+    {
+      "id": "AAJJ",
+      "nombre": "Asociación Atlética Argentinos Juniors",
+      "estadio": "Diego Armando Maradona",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "AAJJ_001",
+          "nombre": "Agustín",
+          "apellido": "Mangiaut",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "AAJJ_002",
+          "nombre": "Luciano",
+          "apellido": "Sánchez",
+          "dorsal": 3,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "AAJJ_003",
+          "nombre": "Hernán",
+          "apellido": "López Muñoz",
+          "dorsal": 23,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "AAJJ_004",
+          "nombre": "Tomás",
+          "apellido": "Molina",
+          "dorsal": 27,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "CAT",
+      "nombre": "Club Atlético Talleres",
+      "estadio": "Mario Alberto Kempes",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "CAT_001",
+          "nombre": "Luis",
+          "apellido": "Ingolotti",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAT_002",
+          "nombre": "Clever",
+          "apellido": "Ferreira",
+          "dorsal": 26,
+          "posicion": "Defensor",
+          "nacionalidad": "Paraguay"
+        },
+        {
+          "id_jugador": "CAT_003",
+          "nombre": "Martín",
+          "apellido": "Benítez",
+          "dorsal": 7,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAT_004",
+          "nombre": "Alexis",
+          "apellido": "Canelo",
+          "dorsal": 14,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "BAN",
+      "nombre": "Club Atlético Banfield",
+      "estadio": "Florencio Solá",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "BAN_001",
+          "nombre": "Diego",
+          "apellido": "Rodríguez",
+          "dorsal": 50,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BAN_002",
+          "nombre": "Lautaro",
+          "apellido": "Cano",
+          "dorsal": 19,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BAN_003",
+          "nombre": "Lautaro",
+          "apellido": "Villegas",
+          "dorsal": 21,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BAN_004",
+          "nombre": "Thomas",
+          "apellido": "Rodríguez",
+          "dorsal": 77,
+          "posicion": "Delantero",
+          "nacionalidad": "Chile"
+        }
+      ]
+    },
+    {
+      "id": "BAR",
+      "nombre": "Club Atlético Barracas Central",
+      "estadio": "Claudio Fabián Tapia",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "BAR_001",
+          "nombre": "Juan",
+          "apellido": "Espinola",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Paraguay"
+        },
+        {
+          "id_jugador": "BAR_002",
+          "nombre": "Rodrígo",
+          "apellido": "Insúa",
+          "dorsal": 6,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BAR_003",
+          "nombre": "Iván",
+          "apellido": "Tapia",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BAR_004",
+          "nombre": "Gonzalo",
+          "apellido": "Morales",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "BEL",
+      "nombre": "Club Atlético Belgrano de Córdoba",
+      "estadio": "Julio César Villagra",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "BEL_001",
+          "nombre": "Manuel",
+          "apellido": "Vicentini",
+          "dorsal": 23,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BEL_002",
+          "nombre": "Adrián",
+          "apellido": "Sporle",
+          "dorsal": 3,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BEL_003",
+          "nombre": "Lucas",
+          "apellido": "Zelarrayán",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Armenia"
+        },
+        {
+          "id_jugador": "BEL_004",
+          "nombre": "Lucas",
+          "apellido": "Passerini",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "BOC",
+      "nombre": "Club Atlético Boca Juniors",
+      "estadio": "Alberto José Armando",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "BOC_001",
+          "nombre": "Álvaro",
+          "apellido": "Montero",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Colombia"
+        },
+        {
+          "id_jugador": "BOC_002",
+          "nombre": "Lautaro",
+          "apellido": "Di Lollo",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BOC_003",
+          "nombre": "Leandro",
+          "apellido": "Paredes",
+          "dorsal": 5,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "BOC_004",
+          "nombre": "Miguel",
+          "apellido": "Merentiel",
+          "dorsal": 16,
+          "posicion": "Delantero",
+          "nacionalidad": "Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "CC",
+      "nombre": "Club Atlético Central Córdoba",
+      "estadio": "Alfredo Terrera",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "CC_001",
+          "nombre": "Alan",
+          "apellido": "Aguerre",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CC_002",
+          "nombre": "Facundo",
+          "apellido": "Mansilla",
+          "dorsal": 6,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CC_003",
+          "nombre": "Marco",
+          "apellido": "Iacobellis",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CC_004",
+          "nombre": "Horacio",
+          "apellido": "Tijanovich",
+          "dorsal": 11,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "DYJ",
+      "nombre": "Club Social y Deportivo Defensa y Justicia",
+      "estadio": "Norberto Tito Tomaghello",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "DYJ_001",
+          "nombre": "Matias",
+          "apellido": "Borgogno",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "DYJ_002",
+          "nombre": "Samuel",
+          "apellido": "Lucero",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "DYJ_003",
+          "nombre": "Aaron",
+          "apellido": "Molinas",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "DYJ_004",
+          "nombre": "Leandro",
+          "apellido": "Fernandez",
+          "dorsal": 11,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "RIE",
+      "nombre": "Club Deportivo Riestra",
+      "estadio": "Guillermo Laza",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "RIE_001",
+          "nombre": "Ignacio",
+          "apellido": "Arce",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIE_002",
+          "nombre": "Carlos",
+          "apellido": "Quintana",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIE_003",
+          "nombre": "Milton",
+          "apellido": "Celiz",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIE_004",
+          "nombre": "Antony",
+          "apellido": "Alonso",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "ELP",
+      "nombre": "Club Estudiantes de La Plata",
+      "estadio": "Jorge Luis Hirschi",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "ELP_001",
+          "nombre": "Fernando",
+          "apellido": "Muslera",
+          "dorsal": 16,
+          "posicion": "Arquero",
+          "nacionalidad": "Uruguay"
+        },
+        {
+          "id_jugador": "ELP_002",
+          "nombre": "Santiago",
+          "apellido": "Nuñez",
+          "dorsal": 4,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "ELP_003",
+          "nombre": "Gabriel",
+          "apellido": "Neves",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Uruguay"
+        },
+        {
+          "id_jugador": "ELP_004",
+          "nombre": "Guido",
+          "apellido": "Carrillo",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "RCU",
+      "nombre": "Asociación Atlética Estudiantes",
+      "estadio": "Ciudad de Río Cuarto",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "RCU_001",
+          "nombre": "Lucas",
+          "apellido": "Bruera",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RCU_002",
+          "nombre": "Valentin",
+          "apellido": "Fenoglio",
+          "dorsal": 4,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RCU_003",
+          "nombre": "Siro",
+          "apellido": "Rosane",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RCU_004",
+          "nombre": "Javier",
+          "apellido": "Ferreira",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "GEM",
+      "nombre": "Club Atlético Gimnasia y Esgrima",
+      "estadio": "Victor Antonio Legrotaglie",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "GEM_001",
+          "nombre": "César",
+          "apellido": "Rigamonti",
+          "dorsal": 23,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GEM_002",
+          "nombre": "Diego",
+          "apellido": "Mondino",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GEM_003",
+          "nombre": "Nahuel",
+          "apellido": "Barbosa",
+          "dorsal": 5,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GEM_004",
+          "nombre": "Agustín",
+          "apellido": "Módica",
+          "dorsal": 29,
+          "posicion": "Delantero",
+          "nacionalidad": "Italia"
+        }
+      ]
+    },
+    {
+      "id": "GLP",
+      "nombre": "Club de Gimnasia y Esgrima La Plata",
+      "estadio": "Juan Carmelo Zerillo",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "GLP_001",
+          "nombre": "Nelson",
+          "apellido": "Insfrán",
+          "dorsal": 23,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GLP_002",
+          "nombre": "Germán",
+          "apellido": "Conti",
+          "dorsal": 13,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GLP_003",
+          "nombre": "Ignacio",
+          "apellido": "Fernández",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "GLP_004",
+          "nombre": "Manuel",
+          "apellido": "Panaro",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "HUR",
+      "nombre": "Club Atlético Huracán",
+      "estadio": "Tomás Adolfo Ducó",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "HUR_001",
+          "nombre": "Hernán",
+          "apellido": "Galíndez",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Ecuador"
+        },
+        {
+          "id_jugador": "HUR_002",
+          "nombre": "Lucas",
+          "apellido": "Blondel",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Suiza"
+        },
+        {
+          "id_jugador": "HUR_003",
+          "nombre": "Rodrígo",
+          "apellido": "Fernández Cedres",
+          "dorsal": 5,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Uruguay"
+        },
+        {
+          "id_jugador": "HUR_004",
+          "nombre": "Ignacio",
+          "apellido": "Pussetto",
+          "dorsal": 23,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "CAI",
+      "nombre": "Club Atlético Independiente",
+      "estadio": "Libertadores de América",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "CAI_001",
+          "nombre": "Rodrígo",
+          "apellido": "Rey",
+          "dorsal": 33,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAI_002",
+          "nombre": "Juan Miguel",
+          "apellido": "Arrayago",
+          "dorsal": 35,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAI_003",
+          "nombre": "Luciano",
+          "apellido": "Cabral",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Chile"
+        },
+        {
+          "id_jugador": "CAI_004",
+          "nombre": "Santiago",
+          "apellido": "Montiel",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "IRM",
+      "nombre": "Club Sportivo Independiente Rivadavia",
+      "estadio": "Bautista Gargantini",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "IRM_001",
+          "nombre": "Nicolás",
+          "apellido": "Bolcato",
+          "dorsal": 30,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IRM_002",
+          "nombre": "Juan",
+          "apellido": "Elordi",
+          "dorsal": 3,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IRM_003",
+          "nombre": "Gonzalo",
+          "apellido": "Rios",
+          "dorsal": 11,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IRM_004",
+          "nombre": "Alex",
+          "apellido": "Arce",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Paraguay"
+        }
+      ]
+    },
+    {
+      "id": "IACC",
+      "nombre": "Instituto Atlético Central Córdoba",
+      "estadio": "Juan Domingo Perón",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "IACC_001",
+          "nombre": "Marcos",
+          "apellido": "Ledesma",
+          "dorsal": 29,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IACC_002",
+          "nombre": "Hernán",
+          "apellido": "de la Fuente",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IACC_003",
+          "nombre": "Alex",
+          "apellido": "Luna",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "IACC_004",
+          "nombre": "Matías",
+          "apellido": "Tissera",
+          "dorsal": 17,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "LAN",
+      "nombre": "Club Atlético Lanús",
+      "estadio": "Ciudad de Lanús",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "LAN_001",
+          "nombre": "Nahuel",
+          "apellido": "Losada",
+          "dorsal": 26,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "LAN_002",
+          "nombre": "Sasha",
+          "apellido": "Marcich",
+          "dorsal": 6,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "LAN_003",
+          "nombre": "Marcelino",
+          "apellido": "Moreno",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "LAN_004",
+          "nombre": "Eduardo",
+          "apellido": "Salvio",
+          "dorsal": 11,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "NOB",
+      "nombre": "Club Atlético Newell's Old Boys",
+      "estadio": "Marcelo Alberto Bielsa",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "NOB_001",
+          "nombre": "Gabriel",
+          "apellido": "Arias",
+          "dorsal": 21,
+          "posicion": "Arquero",
+          "nacionalidad": "Chile"
+        },
+        {
+          "id_jugador": "NOB_002",
+          "nombre": "Ian",
+          "apellido": "Glavinovich",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "NOB_003",
+          "nombre": "Alan",
+          "apellido": "Soñora",
+          "dorsal": 15,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Estados unidos"
+        },
+        {
+          "id_jugador": "NOB_004",
+          "nombre": "Matías",
+          "apellido": "Coccaro",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Uruguay"
+        }
+      ]
+    },
+    {
+      "id": "CAP",
+      "nombre": "Club Atlético Platense",
+      "estadio": "Ciudad de Vicente Lopez",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "CAP_001",
+          "nombre": "Juan Pablo",
+          "apellido": "Cozzani",
+          "dorsal": 30,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAP_002",
+          "nombre": "Ignacio",
+          "apellido": "Vázquez",
+          "dorsal": 13,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAP_003",
+          "nombre": "Franco",
+          "apellido": "Zapiola",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAP_004",
+          "nombre": "Guido",
+          "apellido": "Mainero",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "RAC",
+      "nombre": "Racing Club",
+      "estadio": "Presidente Juan Domingo Perón",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "RAC_001",
+          "nombre": "Facundo",
+          "apellido": "Cambeses",
+          "dorsal": 25,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RAC_002",
+          "nombre": "Marcos",
+          "apellido": "Rojo",
+          "dorsal": 6,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RAC_003",
+          "nombre": "Matko",
+          "apellido": "Miljevic",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Estados unidos"
+        },
+        {
+          "id_jugador": "RAC_004",
+          "nombre": "Adrián",
+          "apellido": "Martinez",
+          "dorsal": 9,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "RIV",
+      "nombre": "Club Atlético River Plate",
+      "estadio": "Mâs Monumental",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "RIV_001",
+          "nombre": "Santiago",
+          "apellido": "Beltrán",
+          "dorsal": 41,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIV_002",
+          "nombre": "Lautaro",
+          "apellido": "Rivero",
+          "dorsal": 13,
+          "posicion": null,
+          "nacionalidad": null
+        }
+      ]
+    },
+    {
+      "id": "CARC",
+      "nombre": "Club Atlético Rosario Central",
+      "estadio": "Gigante de Arrollito",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    },
+    {
+      "id": "SLA",
+      "nombre": "Club Atlético San Lorenzo de Almagro",
+      "estadio": "Pedro Bidegain",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    },
+    {
+      "id": "CAS",
+      "nombre": "Club Atlético Sarmiento",
+      "estadio": "Eva Perón de Junín",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    },
+    {
+      "id": "TIG",
+      "nombre": "Club Atlético Tigre",
+      "estadio": "José Dellagiovanna",
+      "zona": "B",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    },
+    {
+      "id": "UNI",
+      "nombre": "Club Atlético Unión",
+      "estadio": "15 de Abril",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    },
+    {
+      "id": "VEL",
+      "nombre": "Club Atlético Vélez Sarfield",
+      "estadio": "José Amalfitani",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": []
+    }
+  ]
+}
