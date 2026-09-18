@@ -1,3 +1,14 @@
+import json
+
+
+with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
+    equiposArgentinos = json.load(f)
+
+
+
+
+   
+    
 class Jugador:
     def __init__(self, id_jugador, id_equipo, nombre, apellido, dorsal, posicion):
         self.id_jugador = id_jugador
@@ -58,3 +69,10 @@ class Equipo:
     
     def __repr__(self):
         return f"Equipo (id={self._id!r})"
+
+
+    
+
+
+
+
