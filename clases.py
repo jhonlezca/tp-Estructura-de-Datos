@@ -6,8 +6,24 @@ with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8"
 
 
 
+class Liga:
+    def __init__(self, nombre, equipos, cantidad_equipos):
+        self.nombre = nombre
+        self.equipos = equipos
+        self.cantidad_equipos = cantidad_equipos
+    
+    def agregar_equipo(self, equipo):
+        self.equipos.append(equipo)
 
-   
+
+    def buscarEquipoPorNombre(self, nombre_equipo):
+        for equipo in self.equipos:
+            if equipo["nombre"] == nombre_equipo:
+                return equipo
+        return None
+
+
+
     
 class Jugador:
     def __init__(self, id_jugador, id_equipo, nombre, apellido, dorsal, posicion):
@@ -71,7 +87,8 @@ class Equipo:
         return f"Equipo (id={self._id!r})"
 
 
-    
+
+
 
 
 
