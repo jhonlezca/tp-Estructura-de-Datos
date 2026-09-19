@@ -22,6 +22,7 @@ class Liga:
 
                 equipoConsultado = Equipo(equipo["id"], equipo["nombre"], equipo["estadio"], equipo.get("zona"), equipo.get("pos_campeonato"), equipo.get("partidos"), equipo.get("plantel"))
                 equipoConsultado.mostrar_Informacion()
+                equipoConsultado.mostrar_Plantel()
                 break
               
             else:
@@ -75,6 +76,14 @@ class Equipo:
         print(f"Nombre: {self._nombre}")
         print(f"Estadio: {self._estadio}")
         print(f"Zona: {self._zona}") 
+
+    def mostrar_Plantel(self):
+        if self._plantel:
+            print(f"Plantel del equipo {self._nombre}:")
+            for jugador in self._plantel:
+                print(f"- {jugador['nombre']} {jugador['apellido']}, Dorsal: {jugador['dorsal']}, Posición: {jugador['posicion']}")
+        else:
+            print(f"No hay jugadores registrados en el plantel del equipo {self._nombre}.")
   
   
        
@@ -103,6 +112,7 @@ class Equipo:
         return f"Equipo (id={self._id!r})"
 
 
+# Prueba de la clase Liga y la búsqueda de un equipo por nombre
 liga_argentina = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
 liga_argentina.buscarEquipoPorNombre("club Atlético AldoSIVI")
