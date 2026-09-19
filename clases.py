@@ -2,9 +2,9 @@ import json
 
 
 with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
-    equiposArgentinos = json.load(f)
+    datos = json.load(f)
 
-
+equiposArgentinos = datos["equipos"]
 
 class Liga:
     def __init__(self, nombre, equipos, cantidad_equipos):
@@ -18,9 +18,16 @@ class Liga:
 
     def buscarEquipoPorNombre(self, nombre_equipo):
         for equipo in self.equipos:
-            if equipo["nombre"] == nombre_equipo:
-                return equipo
-        return None
+            if equipo["nombre"].lower() == nombre_equipo.lower():
+
+                equipoConsultado = Equipo(equipo["id"], equipo["nombre"], equipo["estadio"], equipo.get("zona"), equipo.get("pos_campeonato"), equipo.get("partidos"), equipo.get("plantel"))
+                equipoConsultado.mostrar_Informacion()
+                break
+              
+            else:
+                print(f"No se encontró el equipo con el nombre '{nombre_equipo}'.")
+                
+     
 
 
 
@@ -54,14 +61,23 @@ class Jugador:
     
     
 class Equipo:
-    def __init__(self, id_equipo, nombre, estadio, zona=None, pos_campeonato=None, partidos=None):
+    def __init__(self, id_equipo, nombre, estadio, zona=None, pos_campeonato=None, partidos=None, plantel=None):
         self._id = id_equipo
         self._nombre = nombre
         self._estadio = estadio
         self._zona = zona
         self._pos_campeonato = pos_campeonato or {}
         self._partidos = partidos or {}
-        self._plantel = []
+        self._plantel = plantel or   []
+
+    def mostrar_Informacion(self):
+        print(f"ID: {self._id}")
+        print(f"Nombre: {self._nombre}")
+        print(f"Estadio: {self._estadio}")
+        print(f"Zona: {self._zona}") 
+  
+  
+       
         
     @property
     def id(self):
@@ -87,9 +103,6 @@ class Equipo:
         return f"Equipo (id={self._id!r})"
 
 
+liga_argentina = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
-
-
-
-
-
+liga_argentina.buscarEquipoPorNombre("club Atlético AldoSIVI")
