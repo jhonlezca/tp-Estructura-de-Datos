@@ -115,9 +115,9 @@
     },
     {
       "id": "CAT",
-      "nombre": "Club Atlético Talleres",
-      "estadio": "Mario Alberto Kempes",
-      "zona": "A",
+      "nombre": "Club Atlético Tucumán",
+      "estadio": "Monumental José Fierro",
+      "zona": "B",
       "campeonato": {
         "posicion": null
       },
@@ -1226,8 +1226,24 @@
           "nombre": "Lautaro",
           "apellido": "Rivero",
           "dorsal": 13,
-          "posicion": null,
-          "nacionalidad": null
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIV_003",
+          "nombre": "Thiago",
+          "apellido": "Almada",
+          "dorsal": 23,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "RIV_004",
+          "nombre": "Ángel",
+          "apellido": "Correa",
+          "dorsal": 10,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
         }
       ]
     },
@@ -1250,7 +1266,40 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "CARC_001",
+          "nombre": "Jeremias Conan",
+          "apellido": "Ledesma",
+          "dorsal": 23,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CARC_002",
+          "nombre": "Ignacio",
+          "apellido": "Ovando",
+          "dorsal": 46,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CARC_003",
+          "nombre": "Pol",
+          "apellido": "Fernández",
+          "dorsal": 28,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CARC_004",
+          "nombre": "Ángel",
+          "apellido": "Di María",
+          "dorsal": 38,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
     },
     {
       "id": "SLA",
@@ -1271,7 +1320,40 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "SLA_001",
+          "nombre": "Facundo",
+          "apellido": "Altamirano",
+          "dorsal": 20,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "SLA_002",
+          "nombre": "Gastón",
+          "apellido": "Hernández",
+          "dorsal": 23,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "SLA_003",
+          "nombre": "Ignacio",
+          "apellido": "Perruzzi",
+          "dorsal": 5,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "SLA_004",
+          "nombre": "Ezequiel",
+          "apellido": "Cerutti",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
     },
     {
       "id": "CAS",
@@ -1292,7 +1374,94 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "CAS_001",
+          "nombre": "Iván",
+          "apellido": "Arboleda",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Colombia"
+        },
+        {
+          "id_jugador": "CAS_002",
+          "nombre": "Juan Manuel",
+          "apellido": "Insaurralde",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAS_003",
+          "nombre": "Santiago",
+          "apellido": "Salle",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "CAS_004",
+          "nombre": "Pablo",
+          "apellido": "Magnín",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
+    },
+    {
+      "id": "TAL",
+      "nombre": "Club Atlético Talleres",
+      "estadio": "Mario Alberto Kempes",
+      "zona": "A",
+      "campeonato": {
+        "posicion": null
+      },
+      "partidos": {
+        "ultimo_partido": {
+          "rival": null,
+          "resultado": null,
+          "condicion": null
+        },
+        "siguiente_partido": {
+          "rival": null,
+          "condicion": null
+        }
+      },
+      "plantel": [
+        {
+          "id_jugador": "TAL_001",
+          "nombre": "Ezequiel",
+          "apellido": "Unsain",
+          "dorsal": 32,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TAL_002",
+          "nombre": "Augusto",
+          "apellido": "Schott",
+          "dorsal": 20,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TAL_003",
+          "nombre": "Federico",
+          "apellido": "Fattori",
+          "dorsal": 8,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TAL_004",
+          "nombre": "Diego",
+          "apellido": "Valoyes",
+          "dorsal": 7,
+          "posicion": "Delantero",
+          "nacionalidad": "Colombia"
+        }
+      ]
     },
     {
       "id": "TIG",
@@ -1313,7 +1482,40 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "TIG_001",
+          "nombre": "Felipe",
+          "apellido": "Zenobio",
+          "dorsal": 12,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TIG_002",
+          "nombre": "Joaquín",
+          "apellido": "Laso",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TIG_003",
+          "nombre": "Gonzalo",
+          "apellido": "Martínez",
+          "dorsal": 28,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "TIG_004",
+          "nombre": "Ignacio",
+          "apellido": "Russo",
+          "dorsal": 29,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
     },
     {
       "id": "UNI",
@@ -1334,7 +1536,40 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "UNI_001",
+          "nombre": "Matías",
+          "apellido": "Mansilla",
+          "dorsal": 21,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "UNI_002",
+          "nombre": "Bruno",
+          "apellido": "Pittón",
+          "dorsal": 12,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "UNI_003",
+          "nombre": "Ignacio",
+          "apellido": "Malcorra",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "UNI_004",
+          "nombre": "Cristian",
+          "apellido": "Tarragona",
+          "dorsal": 25,
+          "posicion": "Delantero",
+          "nacionalidad": "Argentina"
+        }
+      ]
     },
     {
       "id": "VEL",
@@ -1355,7 +1590,40 @@
           "condicion": null
         }
       },
-      "plantel": []
+      "plantel": [
+        {
+          "id_jugador": "VEL_001",
+          "nombre": "Tomás",
+          "apellido": "Marchiori",
+          "dorsal": 1,
+          "posicion": "Arquero",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "VEL_002",
+          "nombre": "Emanuel",
+          "apellido": "Mammana",
+          "dorsal": 2,
+          "posicion": "Defensor",
+          "nacionalidad": "Argentina"
+        },
+        {
+          "id_jugador": "VEL_003",
+          "nombre": "Diego",
+          "apellido": "Valdés",
+          "dorsal": 10,
+          "posicion": "Mediocampista",
+          "nacionalidad": "Chile"
+        },
+        {
+          "id_jugador": "VEL_004",
+          "nombre": "Ronaldo",
+          "apellido": "Martínez",
+          "dorsal": 77,
+          "posicion": "Delantero",
+          "nacionalidad": "Paraguay"
+        }
+      ]
     }
   ]
 }
