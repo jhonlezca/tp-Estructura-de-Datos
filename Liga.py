@@ -2,7 +2,7 @@ import json
 from Equipo import Equipo 
 
 
-with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
+with open("equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]
@@ -19,21 +19,27 @@ class Liga:
 # Se encarga de buscar un equipo por su nombre y mostrar información del mismo
 
     def buscarEquipoPorNombre(self, nombre_equipo):
-        for equipo in self.equipos:
-            if equipo["nombre"].lower() == nombre_equipo.lower():
-
-                equipoConsultado = Equipo(equipo["id"], equipo["nombre"], equipo["estadio"], equipo.get("zona"), equipo.get("pos_campeonato"), equipo.get("partidos"), equipo.get("plantel"))
-                equipoConsultado.mostrar_Informacion()
-                equipoConsultado.filtrarJugadoresPorNacionalidad("argentina")
-                break
-
- 
-
-
-
+        nombre_buscar = nombre_equipo.strip().lower()
         
+        for equipo in self.equipos:
+            if equipo["nombre"].lower() == nombre_buscar:
+                equipoConsultado = Equipo(
+                    equipo["id"], 
+                    equipo["nombre"], 
+                    equipo["estadio"], 
+                    equipo.get("zona"), 
+                    equipo.get("pos_campeonato"), 
+                    equipo.get("partidos"), 
+                    equipo.get("plantel")
+                )
+                print("\nDatos del equipo:")
+                equipoConsultado.mostrar_Informacion()
+                equipoConsultado.mostrar_Plantel() # agregue la parte de mostrar el plantel (no la tenia)
+                return  # <--- RETORNA Y SALE si lo encuentra
 
-liga_argentina = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
-
-liga_argentina.buscarEquipoPorNombre("club Atlético AldoSIVI")
-
+        # Si recorrió todo el for y no lo encontró:
+        print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
+    
+    def listarEquipos(self):
+        """Retorna la lista de equipos registrados en la liga"""
+        return self.equipos
