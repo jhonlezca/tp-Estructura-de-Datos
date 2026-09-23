@@ -72,24 +72,40 @@ def fabricaDeEquipos(cantidadEquipos):
         equipos.append(equipo_obj)          
     return equipos 
 
-equipos = fabricaDeEquipos(1000)  # Llamada a la función para crear n equipos
+equipos = fabricaDeEquipos(10000)  # Llamada a la función para crear n equipos
 
 # Ejemplo de uso : Busqueda Lineal
-datos_equipos = equipos
-nombre_1 = input("Ingrese equipo: ")
-inicio = time.perf_counter()
-buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
-fin = time.perf_counter()
-tiempo_transcurrido = fin - inicio
-print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
-
-# Ejemplo de uso : Busqueda Binaria
-
-# datos_equipos = datos["equipos"]
+# datos_equipos = equipos
 # nombre_1 = input("Ingrese equipo: ")
 # inicio = time.perf_counter()
-# buscarEquipoPorNombre_binaria(datos_equipos, nombre_1)
+# buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
 # fin = time.perf_counter()
 # tiempo_transcurrido = fin - inicio
 # print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
 
+# Ejemplo de uso : Busqueda Binaria
+
+datos_equipos = equipos
+nombre_1 = input("Ingrese equipo: ")
+inicio = time.perf_counter()
+buscarEquipoPorNombre_binaria(datos_equipos, nombre_1)
+fin = time.perf_counter()
+tiempo_transcurrido = fin - inicio
+print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
+
+
+
+
+
+# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 100 equipos creados por la fabrica de equipos.
+# Busqueda Lineal: tiempo de ejecucion:     0.00115700 segundos
+# Busqueda Binaria: tiempo de ejecucion:    0.00153930 segundos
+
+# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 1000 equipos creados por la fabrica de equipos.
+# Busqueda Lineal: Tiempo de ejecucion:     0.00144720 segundos
+# Busqueda Binaria: Tiempo de ejecucion:    0.00204170 segundos
+
+
+# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 10000 equipos creados por la fabrica de equipos.
+# Busqueda Lineal: Tiempo de ejecucion:     0.03155270 segundos
+# Busqueda Binaria: Tiempo de ejecucion:    0.00956830 segundos
