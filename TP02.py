@@ -3,7 +3,7 @@ import json
 from Equipo import Equipo
 import time
 
-with open("equipos_argentina.json", "r", encoding="utf-8") as f:
+with open("tp-Estructura-de-Datos\\equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 def buscarEquipoPorNombre_lineal(lista_equipos, nombre_equipo):
@@ -63,14 +63,25 @@ def buscarEquipoPorNombre_binaria(lista_equipos, nombre_equipo):
         # Si salió del while sin encontrar el equipo:
         print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
 
+def fabricaDeEquipos(cantidadEquipos):
+    equipos = []
+    id = 0
+    while id <= cantidadEquipos:
+        equipo_obj = { "id": id, "nombre": f"Equipo{id}", "estadio": "", "zona": "", "pos_campeonato": {}, "partidos": {}, "plantel": [] }
+        id += 1
+        equipos.append(equipo_obj)          
+    return equipos 
+
+equipos = fabricaDeEquipos(1000)  # Llamada a la función para crear n equipos
+
 # Ejemplo de uso : Busqueda Lineal
-# datos_equipos = datos["equipos"]
-# nombre_1 = input("Ingrese equipo: ")
-# inicio = time.perf_counter()
-# buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
-# fin = time.perf_counter()
-# tiempo_transcurrido = fin - inicio
-# print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
+datos_equipos = equipos
+nombre_1 = input("Ingrese equipo: ")
+inicio = time.perf_counter()
+buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
+fin = time.perf_counter()
+tiempo_transcurrido = fin - inicio
+print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
 
 # Ejemplo de uso : Busqueda Binaria
 
