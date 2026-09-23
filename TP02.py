@@ -1,9 +1,15 @@
 # Para la primer estrategia, vamos a usar la funcion que ya tenemos definida en el archivo Liga.py, la cual realiza una búsqueda lineal dentro de todos los equipos de la liga, y nos devuelve el equipo que coincide con el nombre que le pasamos como parámetro. 
+import json
+from Equipo import Equipo
+import time
 
-def buscarEquipoPorNombre_lineal(self, nombre_equipo):
+with open("equipos_argentina.json", "r", encoding="utf-8") as f:
+    datos = json.load(f)
+
+def buscarEquipoPorNombre_lineal(lista_equipos, nombre_equipo):
         nombre_buscar = nombre_equipo.strip().lower()
         
-        for equipo in self.equipos:
+        for equipo in lista_equipos:
             if equipo["nombre"].lower() == nombre_buscar:
                 equipoConsultado = Equipo(
                     equipo["id"], 
@@ -22,13 +28,11 @@ def buscarEquipoPorNombre_lineal(self, nombre_equipo):
         # Si recorrió todo el for y no lo encontró:
         print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
 
-# 
-
 # Para la segunda, vamos a utilizar una búsqueda binaria. Como el elemento que usamos para buscar es el nombre, en primer lugar tendríamos que tener la lista ordenada de manera ascendente. 
 
-def buscarEquipoPorNombre_binaria(self, nombre_equipo):
+def buscarEquipoPorNombre_binaria(lista_equipos, nombre_equipo):
         nombre_buscar = nombre_equipo.strip().lower()
-        equipos_ordenados = sorted(self.equipos, key=lambda equipo: equipo["nombre"].lower())
+        equipos_ordenados = sorted(lista_equipos, key=lambda equipo: equipo["nombre"].lower())
         inicio = 0
         fin = len(equipos_ordenados) - 1
 
@@ -58,4 +62,23 @@ def buscarEquipoPorNombre_binaria(self, nombre_equipo):
 
         # Si salió del while sin encontrar el equipo:
         print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
+
+# Ejemplo de uso : Busqueda Lineal
+# datos_equipos = datos["equipos"]
+# nombre_1 = input("Ingrese equipo: ")
+# inicio = time.perf_counter()
+# buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
+# fin = time.perf_counter()
+# tiempo_transcurrido = fin - inicio
+# print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
+
+# Ejemplo de uso : Busqueda Binaria
+
+# datos_equipos = datos["equipos"]
+# nombre_1 = input("Ingrese equipo: ")
+# inicio = time.perf_counter()
+# buscarEquipoPorNombre_binaria(datos_equipos, nombre_1)
+# fin = time.perf_counter()
+# tiempo_transcurrido = fin - inicio
+# print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
 
