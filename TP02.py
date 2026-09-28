@@ -1,10 +1,7 @@
 # Para la primer estrategia, vamos a usar la funcion que ya tenemos definida en el archivo Liga.py, la cual realiza una búsqueda lineal dentro de todos los equipos de la liga, y nos devuelve el equipo que coincide con el nombre que le pasamos como parámetro. 
-import json
+
 from Equipo import Equipo
 import time
-
-with open("tp-Estructura-de-Datos\\equipos_argentina.json", "r", encoding="utf-8") as f:
-    datos = json.load(f)
 
 def buscarEquipoPorNombre_lineal(lista_equipos, nombre_equipo):
         nombre_buscar = nombre_equipo.strip().lower()
@@ -28,17 +25,15 @@ def buscarEquipoPorNombre_lineal(lista_equipos, nombre_equipo):
         # Si recorrió todo el for y no lo encontró:
         print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
 
-# Para la segunda, vamos a utilizar una búsqueda binaria. Como el elemento que usamos para buscar es el nombre, en primer lugar tendríamos que tener la lista ordenada de manera ascendente. 
+# Para la segunda, vamos a utilizar una búsqueda binaria. Vale aclarar que, como el elemento que usamos para buscar es el nombre, debemos tener la lista ordenada de manera ascendente.
 
 def buscarEquipoPorNombre_binaria(lista_equipos, nombre_equipo):
         nombre_buscar = nombre_equipo.strip().lower()
-        equipos_ordenados = sorted(lista_equipos, key=lambda equipo: equipo["nombre"].lower())
         inicio = 0
-        fin = len(equipos_ordenados) - 1
-
+        fin = len(lista_equipos) - 1
         while inicio <= fin:
             medio = (inicio + fin) // 2
-            equipo_actual = equipos_ordenados[medio]
+            equipo_actual = lista_equipos[medio]
 
             if equipo_actual["nombre"].lower() == nombre_buscar:
                 equipoConsultado = Equipo(
@@ -72,40 +67,65 @@ def fabricaDeEquipos(cantidadEquipos):
         equipos.append(equipo_obj)          
     return equipos 
 
-equipos = fabricaDeEquipos(10000)  # Llamada a la función para crear n equipos
+tamaño = [100, 1000, 10000, 100000, 500000]
+equipo_inexistente = "Equipo_9999_ZZZZ"
+contador = 1
 
-# Ejemplo de uso : Busqueda Lineal
-# datos_equipos = equipos
-# nombre_1 = input("Ingrese equipo: ")
-# inicio = time.perf_counter()
-# buscarEquipoPorNombre_lineal(datos_equipos, nombre_1)
-# fin = time.perf_counter()
-# tiempo_transcurrido = fin - inicio
-# print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
+for i in tamaño:
+    equipos = fabricaDeEquipos(i)
+    
+    # Medicion busqueda binaria
+    
+    equipos_ordenados = sorted(equipos, key=lambda equipo: equipo["nombre"].lower()) # Ordenamos la lista de manera ascendente
+    print(f"Busqueda binaria {contador}")
+    inicio_binaria = time.perf_counter()
+    buscarEquipoPorNombre_binaria(equipos, equipo_inexistente)
+    fin_binaria = time.perf_counter()
+    tiempo_transcurrido_binaria = fin_binaria - inicio_binaria
+    print(f"Tiempo de ejecucion de busqueda binaria con {i} equipos: {tiempo_transcurrido_binaria:.8f}")
+    
+    # Medicion busqueda lineal 
+    
+    print(f"Busqueda lineal {contador}")
+    inicio_lineal = time.perf_counter()
+    buscarEquipoPorNombre_lineal(equipos, equipo_inexistente)
+    fin_lineal = time.perf_counter()
+    tiempo_transcurrido_lineal = fin_lineal - inicio_lineal
+    print(f"Tiempo de ejecucion de busqueda lineal con {i} equipos: {tiempo_transcurrido_lineal:.8f}")
+    contador = contador + 1
 
-# Ejemplo de uso : Busqueda Binaria
+# REGISTRO DE TIEMPOS DE EJECUCION: 
 
-datos_equipos = equipos
-nombre_1 = input("Ingrese equipo: ")
-inicio = time.perf_counter()
-buscarEquipoPorNombre_binaria(datos_equipos, nombre_1)
-fin = time.perf_counter()
-tiempo_transcurrido = fin - inicio
-print(f"Tiempo de ejecucion: {tiempo_transcurrido:.8f} segundos")
+# busqueda binaria con 100 equipos:     0.00014700
+# busqueda lineal con 100 equipos:      0.00015790
 
+# busqueda binaria con 1000 equipos:    0.00006520
+# busqueda lineal con 1000 equipos:     0.00021760
 
+# busqueda binaria con 10000 equipos:   0.00015480
+# busqueda lineal con 10000 equipos:    0.00086770
 
+# busqueda binaria con 100000 equipos:  0.00011100
+# busqueda lineal con 100000 equipos:   0.01081180
 
+# busqueda binaria con 500000 equipos: 0.00009840
+# busqueda lineal con 500000 equipos: 0.04029510
 
-# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 100 equipos creados por la fabrica de equipos.
-# Busqueda Lineal: tiempo de ejecucion:     0.00115700 segundos
-# Busqueda Binaria: tiempo de ejecucion:    0.00153930 segundos
+# ANALISIS Y CONCLUSIONES
 
-# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 1000 equipos creados por la fabrica de equipos.
-# Busqueda Lineal: Tiempo de ejecucion:     0.00144720 segundos
-# Busqueda Binaria: Tiempo de ejecucion:    0.00204170 segundos
+# Busqueda lineal
 
+#  En este caso, estamos recorriendo la lista elemento por elemento de forma secuencial. A partir de ello, determinamos los siguientes tres casos:
+#     Peor caso - O(N): ocurre cuando el equipo buscado no existe en la lista o se encuentra en la ultima posicion. El algoritmo realiza N comparaciones.
+#     Mejor caso - Ω(1): ocurre cuando el equipo buscado esta justo en la primer posicion, realizando una sola comparacion.
+#     Caso promedio - Θ(N): en promedio el algoritmo va a realizar N / 2 comparaciones, manteniendo un comportamiento lineal respecto a N.
 
-# Registros de tiempo de ejecucion para la busqueda lineal y binaria, con 10000 equipos creados por la fabrica de equipos.
-# Busqueda Lineal: Tiempo de ejecucion:     0.03155270 segundos
-# Busqueda Binaria: Tiempo de ejecucion:    0.00956830 segundos
+# Busqueda Binaria
+
+#  Suponiendo que la lista ya se encuentra previamente ordenada, determinamos los siguientes casos:
+#   Peor caso - O(log N): en cada while, el algoritmo descarta la mitad de los elementos. En el peor caso, el elemento no existe o esta en un extremo; realizandose (como mucho) log en base 2 (N) comparaciones. 
+#   Mejor caso - Ω(1): Ocurre cuando el elemento buscado coincide con la mitad de la lista.
+#   Caso Promedio — Θ(log N): En promedio, descartar la mitad en cada paso requiere aproximadamente log en base 2 (N) - 1 iteraciones.
+
+#   CONCLUSION
+#  Considerando que la búsqueda lineal depende de qué tan pronto se encuentre el equipo en la lista, determinamos que para nuestro programa utilizar búsqueda binaria resulta más efectivo. Con ella, se logra un promedio general mucho más bajo que con la lineal; además, el peor de los casos es menos "peor" que con el primer algoritmo de búsqueda.
