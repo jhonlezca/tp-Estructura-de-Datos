@@ -1,5 +1,7 @@
 import json
-from Equipo import Equipo 
+from Equipo import Equipo
+from TP03 import ArbolBinarioBusqueda 
+import random
 
 
 with open("equipos_argentina.json", "r", encoding="utf-8") as f:
@@ -12,9 +14,26 @@ class Liga:
         self.nombre = nombre
         self.equipos = equipos
         self.cantidad_equipos = cantidad_equipos
+        self.arbol_equipos = ArbolBinarioBusqueda()
+        
+        # Poblamos el arbol desordenando previamente la lista para que las ramificaciones tengan sentido
+        
+        if self.equipos:
+            self.poblar_arbol_desordenado()
+
+    def poblar_arbol_desordenado(self):
+        # hacemos una copia para desordenar sin alterar la lista original
+        copia_desordenada = self.equipos.copy()
+        random.shuffle(copia_desordenada)
+        
+        for equipo in copia_desordenada:
+            self.arbol_equipos.insertar(equipo)
+        
+    # Es la funcion original de Agregar Equipo pero ahora tambien inserta el equipo al arbol
     
     def agregar_equipo(self, equipo):
         self.equipos.append(equipo)
+        self.arbol_equipos.insertar(equipo)
 
 # Se encarga de buscar un equipo por su nombre y mostrar información del mismo
 
@@ -43,3 +62,10 @@ class Liga:
     def listarEquipos(self):
         """Retorna la lista de equipos registrados en la liga"""
         return self.equipos
+    
+    def buscarEquipoPorNombreArbol(self, nombre_equipo):
+        return self.arbol_equipos.buscar(nombre_equipo)
+    
+    def listarEquiposArbol(self):
+        return self.arbol_equipos.recorrido_inorder()
+    

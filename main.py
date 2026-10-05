@@ -12,11 +12,14 @@ def main():
     print("="*24)
     print(" BIENVENIDO A FUTBOLERO ")
     print("="*24)
+    print(" Ahora, ademas de nuestras funciones clasicas, tambien podes utilizar las nuevas desarrolladas con Arbol de Busqueda Binaria (ABB). ¡Probalas!")
     while True:
         print("\n--- MENÚ PRINCIPAL ---")
         print("1. Buscar equipo por nombre")
         print("2. Listar todos los equipos")
-        print("3. Salir")
+        print("3. Buscar equipo por nombre (ABB)")
+        print("4. Listar todos los equipos (ABB)")
+        print("5. Salir")
         print("\n(Consejo: Utiliza primero la opcion 2 para conocer los nombres de los equipos registrados)\n")
         
         opcion = input("\nSeleccioná una opción: ").strip()
@@ -31,6 +34,20 @@ def main():
                 print(f"• {eq['nombre']}")
 
         elif opcion == "3":
+            nombre = input("\nIngresá el nombre del equipo a buscar: ")
+            equipo_hallado = liga_argentina.buscarEquipoPorNombre(nombre)
+
+            if equipo_hallado:
+                print(f"\n¡Encontrado!: {equipo_hallado.nombre}")
+                print(f"Estadio: {equipo_hallado.estadio}")
+            else:
+                print("❌ Equipo no encontrado en el árbol.")
+        
+        elif opcion == "4":
+            print("\n--- EQUIPOS EN ORDEN ALFABÉTICO (Recorrido Inorder) ---")
+            for eq in liga_argentina.listarEquipos():
+                print(f"• {eq['nombre']}")
+
             print("\nGracias por utilizar Futbolero ;) \n")
             break
         else:
