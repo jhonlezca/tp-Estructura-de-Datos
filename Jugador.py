@@ -18,3 +18,13 @@ class Jugador:
     def __repr__(self):
         return f"Jugador(id={self._id_jugador!r}, nombre={self._nombre!r}, dorsal={self._dorsal!r})"
     
+    def mostrar_informacion(self):
+        print("-" * 30)  # Línea separadora
+        print(f"ID: {self.id_jugador}")
+        print(f"Nombre: {self.nombre}")
+        print(f"Apellido: {self.apellido}")
+        print(f"Dorsal: {self.dorsal}")
+        print(f"Posición: {self.posicion}")
+        print(f"Nacionalidad: {self.nacionalidad}")
+        print("-" * 30)  # Línea separadora
+
