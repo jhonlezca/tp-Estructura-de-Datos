@@ -1,5 +1,5 @@
 import json
-
+import TP05
 from Liga import Liga
 
 with open("equipos_argentina.json", "r", encoding="utf-8") as f:
@@ -19,7 +19,8 @@ def main():
         print("2. Listar todos los equipos")
         print("3. Buscar equipo por nombre (ABB)")
         print("4. Listar todos los equipos (ABB)")
-        print("5. Salir")
+        print("5. Buscar jugadores por nacionalidad")
+        print("6. Salir")
         print("\n(Consejo: Utiliza primero la opcion 2 para conocer los nombres de los equipos registrados)\n")
         
         opcion = input("\nSeleccioná una opción: ").strip()
@@ -48,8 +49,15 @@ def main():
             for eq in liga_argentina.listarEquipos():
                 print(f"• {eq['nombre']}")
 
-            print("\nGracias por utilizar Futbolero ;) \n")
+        elif opcion == "5":
+            nacionalidad = input("Ingrese una nacionalidad: ")
+            nacionalidades = TP05.ArbolNacionalidades()
+            return nacionalidades.listar_jugadores_por_nacionalidad(nacionalidad)
+        
+        elif opcion == "6":
+            print("\nSaliendo. Gracias por utilizar Futbolero ;) \n")
             break
+        
         else:
             print("⚠️ Opción inválida. Intentá de nuevo.")
 
