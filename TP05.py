@@ -93,3 +93,6 @@ class ArbolNacionalidades:
             print(f"\n❌ No se encontraron jugadores para la nacionalidad '{nacionalidad}'.")
 
 
+# TP 05 completado
+
+
