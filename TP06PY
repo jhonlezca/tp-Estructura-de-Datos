@@ -1,0 +1,6 @@
+"""
+Definir una función de prioridad (¿rating? ¿popularidad? ¿combinación de factores?), implementar la heap binaria manualmente (según reglas de cátedra), obtener el Top-N eficientemente e integrarlo al sistema. Justificar por qué un heap y no, por ejemplo, ordenar todo el dataset cada vez.
+Entregables: heap integrada, función de prioridad, consulta Top-N, versión 4.
+
+
+"""
