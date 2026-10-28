@@ -1,10 +1,23 @@
 import json
 import pandas as pd
+import os
 
-# 1. Cargar el archivo Excel
-excel_path = "equipos_argentina.xlsx"
+# Obtiene la ruta de la carpeta donde está ubicado este script (.py)
+directorio_actual = os.path.dirname(os.path.abspath(__file__))
+
+# Construye la ruta absoluta hacia el archivo Excel
+excel_path = os.path.join(directorio_actual, "equipos_argentina.xlsx")
+
+# Verificar si el archivo realmente existe antes de abrirlo
+if not os.path.exists(excel_path):
+    print(f"❌ Error: No se encontró el archivo 'equipos_argentina.xlsx' en: {directorio_actual}")
+else:
+    df_equipos = pd.read_excel(excel_path, sheet_name="Equipos")
+    df_jugadores = pd.read_excel(excel_path, sheet_name="Jugadores")
+    print("¡Archivo cargado correctamente!")
 
 # Leer hojas
+
 df_equipos = pd.read_excel(excel_path, sheet_name="Equipos")
 df_jugadores = pd.read_excel(excel_path, sheet_name="Jugadores")
 
@@ -48,6 +61,7 @@ for _, fila in df_equipos.iterrows():
                 "condicion": limpiar_valor(fila.get("sig_condicion"))
             }
         },
+        "ligas_ganadas": limpiar_valor(fila.get("ligas_ganadas")),
         "plantel": []
     }
 

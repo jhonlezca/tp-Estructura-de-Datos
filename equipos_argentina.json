@@ -24,6 +24,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "ALD_001",
@@ -78,6 +79,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "3",
       "plantel": [
         {
           "id_jugador": "AAJJ_001",
@@ -132,6 +134,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "1",
       "plantel": [
         {
           "id_jugador": "CAT_001",
@@ -186,6 +189,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "1",
       "plantel": [
         {
           "id_jugador": "BAN_001",
@@ -240,6 +244,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "BAR_001",
@@ -294,6 +299,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "1",
       "plantel": [
         {
           "id_jugador": "BEL_001",
@@ -348,6 +354,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "35",
       "plantel": [
         {
           "id_jugador": "BOC_001",
@@ -402,6 +409,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "CC_001",
@@ -456,6 +464,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "DYJ_001",
@@ -510,6 +519,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "RIE_001",
@@ -564,6 +574,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "7",
       "plantel": [
         {
           "id_jugador": "ELP_001",
@@ -618,6 +629,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "RCU_001",
@@ -672,6 +684,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "GEM_001",
@@ -726,6 +739,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "1",
       "plantel": [
         {
           "id_jugador": "GLP_001",
@@ -780,6 +794,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "5",
       "plantel": [
         {
           "id_jugador": "HUR_001",
@@ -834,6 +849,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "16",
       "plantel": [
         {
           "id_jugador": "CAI_001",
@@ -888,6 +904,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "IRM_001",
@@ -942,6 +959,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "IACC_001",
@@ -996,6 +1014,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "3",
       "plantel": [
         {
           "id_jugador": "LAN_001",
@@ -1050,6 +1069,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "6",
       "plantel": [
         {
           "id_jugador": "NOB_001",
@@ -1104,6 +1124,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "1",
       "plantel": [
         {
           "id_jugador": "CAP_001",
@@ -1158,6 +1179,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "18",
       "plantel": [
         {
           "id_jugador": "RAC_001",
@@ -1212,6 +1234,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "38",
       "plantel": [
         {
           "id_jugador": "RIV_001",
@@ -1266,6 +1289,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "5",
       "plantel": [
         {
           "id_jugador": "CARC_001",
@@ -1320,6 +1344,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "15",
       "plantel": [
         {
           "id_jugador": "SLA_001",
@@ -1374,6 +1399,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "CAS_001",
@@ -1428,6 +1454,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "TAL_001",
@@ -1482,6 +1509,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "TIG_001",
@@ -1536,6 +1564,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "0",
       "plantel": [
         {
           "id_jugador": "UNI_001",
@@ -1590,6 +1619,7 @@
           "condicion": null
         }
       },
+      "ligas_ganadas": "11",
       "plantel": [
         {
           "id_jugador": "VEL_001",
