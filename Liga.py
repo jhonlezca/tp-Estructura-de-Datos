@@ -94,3 +94,12 @@ class Liga:
             print(f" Posición: {equipo[1]} --->  {equipo[0]}")
 
 
+#liga = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
+
+
+#liga.cargar_tabla_de_posiciones(liga.posiciones())
+
+
+#print   ("Top 5 equipos mejor posicionados en la tabla de posiciones:")
+
+#print(liga.topN_equipos(5))
