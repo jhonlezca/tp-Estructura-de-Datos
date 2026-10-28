@@ -1,14 +1,17 @@
 import json
 from Equipo import Equipo
 from TP03 import ArbolBinarioBusqueda 
-from TP06 import MinHeap
+from TP06 import Heap
 import random
 
 
-with open("equipos_argentina.json", "r", encoding="utf-8") as f:
+with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]
+
+
+
 
 class Liga:
     def __init__(self, nombre, equipos, cantidad_equipos):
@@ -16,7 +19,7 @@ class Liga:
         self.equipos = equipos
         self.cantidad_equipos = cantidad_equipos
         self.arbol_equipos = ArbolBinarioBusqueda()
-        self.tabla_de_posiciones = MinHeap()
+        self.tabla_de_posiciones = Heap()
         # Poblamos el arbol desordenando previamente la lista para que las ramificaciones tengan sentido
         
         if self.equipos:
@@ -72,8 +75,22 @@ class Liga:
 
     
     # recibe una lista de  tuplas de  equipos con su posicion en el campeonato  y los inserta en la tabla de posiciones
-    
+    def posiciones(self):
+        tabla = []
+        for posicion, equipo in enumerate(self.equipos, start=1):
+            tabla.append(( equipo["nombre"], posicion))
+        return tabla
+        
     def cargar_tabla_de_posiciones(self, tabla):
         
         for equipo_pos in tabla:
             self.tabla_de_posiciones.insertar(equipo_pos)
+
+    
+
+    def topN_equipos(self, n):
+        """Retorna una lista con los n equipos mejor posicionados en la tabla de posiciones"""
+        for equipo in self.tabla_de_posiciones.obtener_n_mas_pequenos(n):
+            print(f" Posición: {equipo[1]} --->  {equipo[0]}")
+
+

@@ -68,5 +68,5 @@ class Equipo:
 #david = Jugador(2, "David", "Martinez", 5, "defensor", "brasil")
 
 
-#boca = Equipo(1, "Boca Juniors", "La Bombonera", "Zona A", {"posicion": 1}, {"partidos": 10}, [joni, david])
+#boca = Equipo(1, "Boca Juniors", "La Bombonera", "Zona A", {"partidos": 10}, [joni, david])
 #boca.filtrarJugadoresPorNacionalidad("brasil")
