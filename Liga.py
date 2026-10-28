@@ -1,6 +1,7 @@
 import json
 from Equipo import Equipo
 from TP03 import ArbolBinarioBusqueda 
+from TP06 import MinHeap
 import random
 
 
@@ -15,7 +16,7 @@ class Liga:
         self.equipos = equipos
         self.cantidad_equipos = cantidad_equipos
         self.arbol_equipos = ArbolBinarioBusqueda()
-        
+        self.tabla_de_posiciones = MinHeap()
         # Poblamos el arbol desordenando previamente la lista para que las ramificaciones tengan sentido
         
         if self.equipos:
@@ -68,6 +69,11 @@ class Liga:
     
     def listarEquiposArbol(self):
         return self.arbol_equipos.recorrido_inorder()
+
     
+    # recibe una lista de  tuplas de  equipos con su posicion en el campeonato  y los inserta en la tabla de posiciones
     
-    
+    def cargar_tabla_de_posiciones(self, tabla):
+        
+        for equipo_pos in tabla:
+            self.tabla_de_posiciones.insertar(equipo_pos)
