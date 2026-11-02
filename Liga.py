@@ -2,6 +2,7 @@ import json
 from Equipo import Equipo
 from TP03 import ArbolBinarioBusqueda 
 from TP06 import Heap
+from TP07 import GrafoEdades
 import random
 
 
@@ -9,9 +10,6 @@ with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8"
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]
-
-
-
 
 class Liga:
     def __init__(self, nombre, equipos, cantidad_equipos):
@@ -93,6 +91,26 @@ class Liga:
         for equipo in self.tabla_de_posiciones.obtener_n_mas_pequenos(n):
             print(f" Posición: {equipo[1]} --->  {equipo[0]}")
 
+    def obtener_todos_los_jugadores(self):
+        """Retorna una lista simple con todos los objetos Jugador de la liga."""
+        todos = []
+        for equipo in self.equipos:
+            for jugador in equipo.plantel:
+                todos.append(jugador)
+        return todos
+
+    def buscar_jugador_edad(self):
+        GrafoEdades.construir_grafo(self.obtener_todos_los_jugadores)
+        edad_min = input("Ingrese edad minima del rango: ")
+        edad_max = input("Ingrese edad maxima del rango: ")
+        jugadores = GrafoEdades.buscar_por_rango_edad(edad_min, edad_max)
+        print(f"Los jugadores de ese rango de edad son: {jugadores}")
+    
+    def buscar_jugador_edad_similar(self):
+        GrafoEdades.construir_grafo(self.obtener_todos_los_jugadores)
+        jugador = input("Ingrese jugador: ")
+        jugadores = GrafoEdades.obtener_jugadores_de_edad_similar(jugador)
+        print(f"Los jugadores con edad similar a {jugador} son: {jugadores}")
 
 #liga = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
