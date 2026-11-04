@@ -19,7 +19,7 @@
 import json
 
 
-with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
+with open("equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]

@@ -9,26 +9,61 @@ with open("equipos_argentina.json", "r", encoding="utf-8") as f:
 equiposArgentinos = datos["equipos"]
 liga_argentina = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
-def menu_jugadores():
-    print("1. Buscar por nacionalidad. ")
-    print("2. Buscar por edad. ")
-    opcion = input("Ingrese una opcion: ").strip()
+def menu_filtrar_por_grafo(liga_argentina):
+    
+    # 1. Obtener la lista acumulada de jugadores
+    todos = liga_argentina.obtener_todos_los_jugadores()
+    grafo = TP07.GrafoFiltroAtributo()
+
+    print("\n==============================================")
+    print("   BÚSQUEDA Y FILTRADO POR GRAFO DE SIMILITUD")
+    print("==============================================")
+    print("1. Filtrar por Nacionalidad")
+    print("2. Filtrar por Posición")
+    print("3. Filtrar por Edad")
+    
+    opcion = input("\nSeleccioná el atributo a filtrar (1-3): ").strip()
+
+    atributo = None
     if opcion == "1":
-        nacionalidad = input("Ingrese una nacionalidad: ")
-        nacionalidades = TP05.ArbolNacionalidades()
-        return nacionalidades.listar_jugadores_por_nacionalidad(nacionalidad)
+        atributo = "nacionalidad"
+        valor = input("Ingresá la nacionalidad deseada (ej. Argentina, Uruguaya): ")
     elif opcion == "2":
-        print("1. Busqueda por rango de edad")
-        print("2. Busqueda por edad similar")
-        subopcion = input("Ingrese una opcion: ")
-        if subopcion == "1":
-            TP07.GrafoEdades.buscar_por_rango_edad()
-        elif subopcion == "2":
-            TP07.GrafoEdades.obtener_jugadores_de_edad_similar()
-        else:
-            print("Ingrese opcion correcta.")
+        atributo = "posicion"
+        valor = input("Ingresá la posición deseada (ej. Delantero, Mediocampista): ")
+    elif opcion == "3":
+        atributo = "edad"
+        valor = input("Ingresá la edad deseada (ej. 25, 30): ")
     else:
-        print("Ingrese opcion correcta. ")
+        print("⚠️ Opción no válida.")
+        return
+
+    # 2. Construir el subgrafo con las elecciones del usuario
+    grafo.construir_subgrafo_por_atributo(todos, atributo, valor)
+
+    # 3. Consultar y mostrar los resultados generados en la red
+    red = grafo.obtener_red_filtrada()
+
+    if red:
+        print(f"\n==================================================")
+        print(f" RED DE JUGADORES FILTRADOS POR {atributo.upper()}: '{valor}'")
+        print(f" Total de Nodos Conectados: {len(red)}")
+        print(f"==================================================")
+        
+        for jug, conexiones in red:
+            if isinstance(jug, dict):
+                nombre = f"{jug.get('nombre')} {jug.get('apellido')}"
+                pos = jug.get('posicion', 'S/D')
+                nac = jug.get('nacionalidad', 'S/D')
+            else:
+                nombre = jug.nombre_completo
+                pos = jug.posicion
+                nac = jug.nacionalidad
+
+            print(f"• {nombre} ({pos} - {nac})")
+            print(f"   └── Conectado con otros {conexiones} jugadores del grupo.")
+    else:
+        print(f"\n❌ No se encontraron jugadores con {atributo} = '{valor}'.")
 
 def main():
     print("="*24)
@@ -73,8 +108,8 @@ def main():
                 print(f"• {eq['nombre']}")
 
         elif opcion == "5":
-            menu_jugadores
-            
+            menu_filtrar_por_grafo(liga_argentina)
+
         elif opcion == "6":
             print("\nSaliendo. Gracias por utilizar Futbolero ;) \n")
             break

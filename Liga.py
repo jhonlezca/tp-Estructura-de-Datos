@@ -2,14 +2,17 @@ import json
 from Equipo import Equipo
 from TP03 import ArbolBinarioBusqueda 
 from TP06 import Heap
-from TP07 import GrafoEdades
+from TP07 import GrafoFiltroAtributo
 import random
 
 
-with open("tp-Estructura-de-Datos/equipos_argentina.json", "r", encoding="utf-8") as f:
+with open("equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]
+
+jugadores = []
+
 
 class Liga:
     def __init__(self, nombre, equipos, cantidad_equipos):
@@ -37,7 +40,7 @@ class Liga:
         self.equipos.append(equipo)
         self.arbol_equipos.insertar(equipo)
 
-# Se encarga de buscar un equipo por su nombre y mostrar información del mismo
+    # Se encarga de buscar un equipo por su nombre y mostrar información del mismo
 
     def buscarEquipoPorNombre(self, nombre_equipo):
         nombre_buscar = nombre_equipo.strip().lower()
@@ -70,7 +73,6 @@ class Liga:
     
     def listarEquiposArbol(self):
         return self.arbol_equipos.recorrido_inorder()
-
     
     # recibe una lista de  tuplas de  equipos con su posicion en el campeonato  y los inserta en la tabla de posiciones
     def posiciones(self):
@@ -84,33 +86,23 @@ class Liga:
         for equipo_pos in tabla:
             self.tabla_de_posiciones.insertar(equipo_pos)
 
-    
-
     def topN_equipos(self, n):
         """Retorna una lista con los n equipos mejor posicionados en la tabla de posiciones"""
         for equipo in self.tabla_de_posiciones.obtener_n_mas_pequenos(n):
             print(f" Posición: {equipo[1]} --->  {equipo[0]}")
 
+    def listar_jugadores(self):
+        for linea in jugadores:
+            print(f"Nombre: {linea['nombre']} {linea['apellido']}, Nacionalidad: {linea['nacionalidad']}, Posición: {linea['posicion']}")
+        return f"Total de jugadores: {len(jugadores)}"
+
     def obtener_todos_los_jugadores(self):
-        """Retorna una lista simple con todos los objetos Jugador de la liga."""
+        """Devuelve una lista de todos los jugadores de la liga"""
         todos = []
         for equipo in self.equipos:
-            for jugador in equipo.plantel:
-                todos.append(jugador)
+            plantel = equipo.get("plantel", [])
+            todos.extend(plantel)
         return todos
-
-    def buscar_jugador_edad(self):
-        GrafoEdades.construir_grafo(self.obtener_todos_los_jugadores)
-        edad_min = input("Ingrese edad minima del rango: ")
-        edad_max = input("Ingrese edad maxima del rango: ")
-        jugadores = GrafoEdades.buscar_por_rango_edad(edad_min, edad_max)
-        print(f"Los jugadores de ese rango de edad son: {jugadores}")
-    
-    def buscar_jugador_edad_similar(self):
-        GrafoEdades.construir_grafo(self.obtener_todos_los_jugadores)
-        jugador = input("Ingrese jugador: ")
-        jugadores = GrafoEdades.obtener_jugadores_de_edad_similar(jugador)
-        print(f"Los jugadores con edad similar a {jugador} son: {jugadores}")
 
 #liga = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
