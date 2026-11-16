@@ -32,7 +32,8 @@
           "apellido": "Moyano",
           "dorsal": 17,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "ALD_002",
@@ -40,7 +41,8 @@
           "apellido": "Sigali",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 39
         },
         {
           "id_jugador": "ALD_003",
@@ -48,7 +50,8 @@
           "apellido": "Linares",
           "dorsal": 5,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         },
         {
           "id_jugador": "ALD_004",
@@ -56,7 +59,8 @@
           "apellido": "Vombergar",
           "dorsal": 29,
           "posicion": "Delantero",
-          "nacionalidad": "Eslovenia"
+          "nacionalidad": "Eslovenia",
+          "edad": 31
         }
       ]
     },
@@ -87,7 +91,8 @@
           "apellido": "Mangiaut",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "AAJJ_002",
@@ -95,7 +100,8 @@
           "apellido": "Sánchez",
           "dorsal": 3,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "AAJJ_003",
@@ -103,7 +109,8 @@
           "apellido": "López Muñoz",
           "dorsal": 23,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "AAJJ_004",
@@ -111,7 +118,8 @@
           "apellido": "Molina",
           "dorsal": 27,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         }
       ]
     },
@@ -142,7 +150,8 @@
           "apellido": "Ingolotti",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "CAT_002",
@@ -150,7 +159,8 @@
           "apellido": "Ferreira",
           "dorsal": 26,
           "posicion": "Defensor",
-          "nacionalidad": "Paraguay"
+          "nacionalidad": "Paraguay",
+          "edad": 23
         },
         {
           "id_jugador": "CAT_003",
@@ -158,7 +168,8 @@
           "apellido": "Benítez",
           "dorsal": 7,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "CAT_004",
@@ -166,7 +177,8 @@
           "apellido": "Canelo",
           "dorsal": 14,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         }
       ]
     },
@@ -197,7 +209,8 @@
           "apellido": "Rodríguez",
           "dorsal": 50,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 37
         },
         {
           "id_jugador": "BAN_002",
@@ -205,7 +218,8 @@
           "apellido": "Cano",
           "dorsal": 19,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 24
         },
         {
           "id_jugador": "BAN_003",
@@ -213,7 +227,8 @@
           "apellido": "Villegas",
           "dorsal": 21,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "BAN_004",
@@ -221,7 +236,8 @@
           "apellido": "Rodríguez",
           "dorsal": 77,
           "posicion": "Delantero",
-          "nacionalidad": "Chile"
+          "nacionalidad": "Chile",
+          "edad": 30
         }
       ]
     },
@@ -252,7 +268,8 @@
           "apellido": "Espinola",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Paraguay"
+          "nacionalidad": "Paraguay",
+          "edad": 32
         },
         {
           "id_jugador": "BAR_002",
@@ -260,7 +277,8 @@
           "apellido": "Insúa",
           "dorsal": 6,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         },
         {
           "id_jugador": "BAR_003",
@@ -268,7 +286,8 @@
           "apellido": "Tapia",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 27
         },
         {
           "id_jugador": "BAR_004",
@@ -276,7 +295,8 @@
           "apellido": "Morales",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 23
         }
       ]
     },
@@ -307,7 +327,8 @@
           "apellido": "Vicentini",
           "dorsal": 23,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "BEL_002",
@@ -315,7 +336,8 @@
           "apellido": "Sporle",
           "dorsal": 3,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         },
         {
           "id_jugador": "BEL_003",
@@ -323,7 +345,8 @@
           "apellido": "Zelarrayán",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Armenia"
+          "nacionalidad": "Armenia",
+          "edad": 34
         },
         {
           "id_jugador": "BEL_004",
@@ -331,7 +354,8 @@
           "apellido": "Passerini",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         }
       ]
     },
@@ -362,7 +386,8 @@
           "apellido": "Montero",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Colombia"
+          "nacionalidad": "Colombia",
+          "edad": 31
         },
         {
           "id_jugador": "BOC_002",
@@ -370,7 +395,8 @@
           "apellido": "Di Lollo",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "BOC_003",
@@ -378,7 +404,8 @@
           "apellido": "Paredes",
           "dorsal": 5,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "BOC_004",
@@ -386,7 +413,8 @@
           "apellido": "Merentiel",
           "dorsal": 16,
           "posicion": "Delantero",
-          "nacionalidad": "Uruguay"
+          "nacionalidad": "Uruguay",
+          "edad": 30
         }
       ]
     },
@@ -417,7 +445,8 @@
           "apellido": "Aguerre",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "CC_002",
@@ -425,7 +454,8 @@
           "apellido": "Mansilla",
           "dorsal": 6,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 27
         },
         {
           "id_jugador": "CC_003",
@@ -433,7 +463,8 @@
           "apellido": "Iacobellis",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "CC_004",
@@ -441,7 +472,8 @@
           "apellido": "Tijanovich",
           "dorsal": 11,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         }
       ]
     },
@@ -472,7 +504,8 @@
           "apellido": "Borgogno",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         },
         {
           "id_jugador": "DYJ_002",
@@ -480,7 +513,8 @@
           "apellido": "Lucero",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 21
         },
         {
           "id_jugador": "DYJ_003",
@@ -488,7 +522,8 @@
           "apellido": "Molinas",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "DYJ_004",
@@ -496,7 +531,8 @@
           "apellido": "Fernandez",
           "dorsal": 11,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 35
         }
       ]
     },
@@ -527,7 +563,8 @@
           "apellido": "Arce",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         },
         {
           "id_jugador": "RIE_002",
@@ -535,7 +572,8 @@
           "apellido": "Quintana",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 38
         },
         {
           "id_jugador": "RIE_003",
@@ -543,7 +581,8 @@
           "apellido": "Celiz",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         },
         {
           "id_jugador": "RIE_004",
@@ -551,7 +590,8 @@
           "apellido": "Alonso",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         }
       ]
     },
@@ -582,7 +622,8 @@
           "apellido": "Muslera",
           "dorsal": 16,
           "posicion": "Arquero",
-          "nacionalidad": "Uruguay"
+          "nacionalidad": "Uruguay",
+          "edad": 40
         },
         {
           "id_jugador": "ELP_002",
@@ -590,7 +631,8 @@
           "apellido": "Nuñez",
           "dorsal": 4,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "ELP_003",
@@ -598,7 +640,8 @@
           "apellido": "Neves",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Uruguay"
+          "nacionalidad": "Uruguay",
+          "edad": 29
         },
         {
           "id_jugador": "ELP_004",
@@ -606,7 +649,8 @@
           "apellido": "Carrillo",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 35
         }
       ]
     },
@@ -637,7 +681,8 @@
           "apellido": "Bruera",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 29
         },
         {
           "id_jugador": "RCU_002",
@@ -645,7 +690,8 @@
           "apellido": "Fenoglio",
           "dorsal": 4,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 23
         },
         {
           "id_jugador": "RCU_003",
@@ -653,7 +699,8 @@
           "apellido": "Rosane",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "RCU_004",
@@ -661,7 +708,8 @@
           "apellido": "Ferreira",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Paraguay"
+          "nacionalidad": "Paraguay",
+          "edad": 34
         }
       ]
     },
@@ -692,7 +740,8 @@
           "apellido": "Rigamonti",
           "dorsal": 23,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 39
         },
         {
           "id_jugador": "GEM_002",
@@ -700,7 +749,8 @@
           "apellido": "Mondino",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "GEM_003",
@@ -708,7 +758,8 @@
           "apellido": "Barbosa",
           "dorsal": 5,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 27
         },
         {
           "id_jugador": "GEM_004",
@@ -716,7 +767,8 @@
           "apellido": "Módica",
           "dorsal": 29,
           "posicion": "Delantero",
-          "nacionalidad": "Italia"
+          "nacionalidad": "Italia",
+          "edad": 23
         }
       ]
     },
@@ -747,7 +799,8 @@
           "apellido": "Insfrán",
           "dorsal": 23,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         },
         {
           "id_jugador": "GLP_002",
@@ -755,7 +808,8 @@
           "apellido": "Conti",
           "dorsal": 13,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "GLP_003",
@@ -763,7 +817,8 @@
           "apellido": "Fernández",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "GLP_004",
@@ -771,7 +826,8 @@
           "apellido": "Panaro",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 23
         }
       ]
     },
@@ -802,7 +858,8 @@
           "apellido": "Galíndez",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Ecuador"
+          "nacionalidad": "Ecuador",
+          "edad": 39
         },
         {
           "id_jugador": "HUR_002",
@@ -810,7 +867,8 @@
           "apellido": "Blondel",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Suiza"
+          "nacionalidad": "Suiza",
+          "edad": 30
         },
         {
           "id_jugador": "HUR_003",
@@ -818,7 +876,8 @@
           "apellido": "Fernández Cedres",
           "dorsal": 5,
           "posicion": "Mediocampista",
-          "nacionalidad": "Uruguay"
+          "nacionalidad": "Uruguay",
+          "edad": 30
         },
         {
           "id_jugador": "HUR_004",
@@ -826,7 +885,8 @@
           "apellido": "Pussetto",
           "dorsal": 23,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         }
       ]
     },
@@ -857,7 +917,8 @@
           "apellido": "Rey",
           "dorsal": 33,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 35
         },
         {
           "id_jugador": "CAI_002",
@@ -865,7 +926,8 @@
           "apellido": "Arrayago",
           "dorsal": 35,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 17
         },
         {
           "id_jugador": "CAI_003",
@@ -873,7 +935,8 @@
           "apellido": "Cabral",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Chile"
+          "nacionalidad": "Chile",
+          "edad": 31
         },
         {
           "id_jugador": "CAI_004",
@@ -881,7 +944,8 @@
           "apellido": "Montiel",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 25
         }
       ]
     },
@@ -912,7 +976,8 @@
           "apellido": "Bolcato",
           "dorsal": 30,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "IRM_002",
@@ -920,7 +985,8 @@
           "apellido": "Elordi",
           "dorsal": 3,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 32
         },
         {
           "id_jugador": "IRM_003",
@@ -928,7 +994,8 @@
           "apellido": "Rios",
           "dorsal": 11,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 27
         },
         {
           "id_jugador": "IRM_004",
@@ -936,7 +1003,8 @@
           "apellido": "Arce",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Paraguay"
+          "nacionalidad": "Paraguay",
+          "edad": 31
         }
       ]
     },
@@ -967,7 +1035,8 @@
           "apellido": "Ledesma",
           "dorsal": 29,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         },
         {
           "id_jugador": "IACC_002",
@@ -975,7 +1044,8 @@
           "apellido": "de la Fuente",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 29
         },
         {
           "id_jugador": "IACC_003",
@@ -983,7 +1053,8 @@
           "apellido": "Luna",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "IACC_004",
@@ -991,7 +1062,8 @@
           "apellido": "Tissera",
           "dorsal": 17,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         }
       ]
     },
@@ -1022,7 +1094,8 @@
           "apellido": "Losada",
           "dorsal": 26,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 33
         },
         {
           "id_jugador": "LAN_002",
@@ -1030,7 +1103,8 @@
           "apellido": "Marcich",
           "dorsal": 6,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         },
         {
           "id_jugador": "LAN_003",
@@ -1038,7 +1112,8 @@
           "apellido": "Moreno",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         },
         {
           "id_jugador": "LAN_004",
@@ -1046,7 +1121,8 @@
           "apellido": "Salvio",
           "dorsal": 11,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         }
       ]
     },
@@ -1077,7 +1153,8 @@
           "apellido": "Arias",
           "dorsal": 21,
           "posicion": "Arquero",
-          "nacionalidad": "Chile"
+          "nacionalidad": "Chile",
+          "edad": 39
         },
         {
           "id_jugador": "NOB_002",
@@ -1085,7 +1162,8 @@
           "apellido": "Glavinovich",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 25
         },
         {
           "id_jugador": "NOB_003",
@@ -1093,7 +1171,8 @@
           "apellido": "Soñora",
           "dorsal": 15,
           "posicion": "Mediocampista",
-          "nacionalidad": "Estados unidos"
+          "nacionalidad": "Estados unidos",
+          "edad": 28
         },
         {
           "id_jugador": "NOB_004",
@@ -1101,7 +1180,8 @@
           "apellido": "Coccaro",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Uruguay"
+          "nacionalidad": "Uruguay",
+          "edad": 29
         }
       ]
     },
@@ -1132,7 +1212,8 @@
           "apellido": "Cozzani",
           "dorsal": 30,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         },
         {
           "id_jugador": "CAP_002",
@@ -1140,7 +1221,8 @@
           "apellido": "Vázquez",
           "dorsal": 13,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 29
         },
         {
           "id_jugador": "CAP_003",
@@ -1148,7 +1230,8 @@
           "apellido": "Zapiola",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 25
         },
         {
           "id_jugador": "CAP_004",
@@ -1156,7 +1239,8 @@
           "apellido": "Mainero",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         }
       ]
     },
@@ -1187,7 +1271,8 @@
           "apellido": "Cambeses",
           "dorsal": 25,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 29
         },
         {
           "id_jugador": "RAC_002",
@@ -1195,7 +1280,8 @@
           "apellido": "Rojo",
           "dorsal": 6,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "RAC_003",
@@ -1203,7 +1289,8 @@
           "apellido": "Miljevic",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Estados unidos"
+          "nacionalidad": "Estados unidos",
+          "edad": 25
         },
         {
           "id_jugador": "RAC_004",
@@ -1211,7 +1298,8 @@
           "apellido": "Martinez",
           "dorsal": 9,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         }
       ]
     },
@@ -1242,7 +1330,8 @@
           "apellido": "Beltrán",
           "dorsal": 41,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "RIV_002",
@@ -1250,7 +1339,8 @@
           "apellido": "Rivero",
           "dorsal": 13,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 23
         },
         {
           "id_jugador": "RIV_003",
@@ -1258,7 +1348,8 @@
           "apellido": "Almada",
           "dorsal": 23,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 25
         },
         {
           "id_jugador": "RIV_004",
@@ -1266,7 +1357,8 @@
           "apellido": "Correa",
           "dorsal": 10,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         }
       ]
     },
@@ -1297,7 +1389,8 @@
           "apellido": "Ledesma",
           "dorsal": 23,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 33
         },
         {
           "id_jugador": "CARC_002",
@@ -1305,7 +1398,8 @@
           "apellido": "Ovando",
           "dorsal": 46,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 19
         },
         {
           "id_jugador": "CARC_003",
@@ -1313,7 +1407,8 @@
           "apellido": "Fernández",
           "dorsal": 28,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 35
         },
         {
           "id_jugador": "CARC_004",
@@ -1321,7 +1416,8 @@
           "apellido": "Di María",
           "dorsal": 38,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 38
         }
       ]
     },
@@ -1352,7 +1448,8 @@
           "apellido": "Altamirano",
           "dorsal": 20,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         },
         {
           "id_jugador": "SLA_002",
@@ -1360,7 +1457,8 @@
           "apellido": "Hernández",
           "dorsal": 23,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 28
         },
         {
           "id_jugador": "SLA_003",
@@ -1368,7 +1466,8 @@
           "apellido": "Perruzzi",
           "dorsal": 5,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 21
         },
         {
           "id_jugador": "SLA_004",
@@ -1376,7 +1475,8 @@
           "apellido": "Cerutti",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         }
       ]
     },
@@ -1407,7 +1507,8 @@
           "apellido": "Arboleda",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Colombia"
+          "nacionalidad": "Colombia",
+          "edad": 30
         },
         {
           "id_jugador": "CAS_002",
@@ -1415,7 +1516,8 @@
           "apellido": "Insaurralde",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 42
         },
         {
           "id_jugador": "CAS_003",
@@ -1423,7 +1525,8 @@
           "apellido": "Salle",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 22
         },
         {
           "id_jugador": "CAS_004",
@@ -1431,7 +1534,8 @@
           "apellido": "Magnín",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         }
       ]
     },
@@ -1462,7 +1566,8 @@
           "apellido": "Unsain",
           "dorsal": 32,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         },
         {
           "id_jugador": "TAL_002",
@@ -1470,7 +1575,8 @@
           "apellido": "Schott",
           "dorsal": 20,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "TAL_003",
@@ -1478,7 +1584,8 @@
           "apellido": "Fattori",
           "dorsal": 8,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 34
         },
         {
           "id_jugador": "TAL_004",
@@ -1486,7 +1593,8 @@
           "apellido": "Valoyes",
           "dorsal": 7,
           "posicion": "Delantero",
-          "nacionalidad": "Colombia"
+          "nacionalidad": "Colombia",
+          "edad": 30
         }
       ]
     },
@@ -1517,7 +1625,8 @@
           "apellido": "Zenobio",
           "dorsal": 12,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 26
         },
         {
           "id_jugador": "TIG_002",
@@ -1525,7 +1634,8 @@
           "apellido": "Laso",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 36
         },
         {
           "id_jugador": "TIG_003",
@@ -1533,7 +1643,8 @@
           "apellido": "Martínez",
           "dorsal": 28,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 33
         },
         {
           "id_jugador": "TIG_004",
@@ -1541,7 +1652,8 @@
           "apellido": "Russo",
           "dorsal": 29,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 25
         }
       ]
     },
@@ -1572,7 +1684,8 @@
           "apellido": "Mansilla",
           "dorsal": 21,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         },
         {
           "id_jugador": "UNI_002",
@@ -1580,7 +1693,8 @@
           "apellido": "Pittón",
           "dorsal": 12,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 33
         },
         {
           "id_jugador": "UNI_003",
@@ -1588,7 +1702,8 @@
           "apellido": "Malcorra",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 39
         },
         {
           "id_jugador": "UNI_004",
@@ -1596,7 +1711,8 @@
           "apellido": "Tarragona",
           "dorsal": 25,
           "posicion": "Delantero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 35
         }
       ]
     },
@@ -1627,7 +1743,8 @@
           "apellido": "Marchiori",
           "dorsal": 1,
           "posicion": "Arquero",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 31
         },
         {
           "id_jugador": "VEL_002",
@@ -1635,7 +1752,8 @@
           "apellido": "Mammana",
           "dorsal": 2,
           "posicion": "Defensor",
-          "nacionalidad": "Argentina"
+          "nacionalidad": "Argentina",
+          "edad": 30
         },
         {
           "id_jugador": "VEL_003",
@@ -1643,7 +1761,8 @@
           "apellido": "Valdés",
           "dorsal": 10,
           "posicion": "Mediocampista",
-          "nacionalidad": "Chile"
+          "nacionalidad": "Chile",
+          "edad": 32
         },
         {
           "id_jugador": "VEL_004",
@@ -1651,7 +1770,8 @@
           "apellido": "Martínez",
           "dorsal": 77,
           "posicion": "Delantero",
-          "nacionalidad": "Paraguay"
+          "nacionalidad": "Paraguay",
+          "edad": 30
         }
       ]
     }
