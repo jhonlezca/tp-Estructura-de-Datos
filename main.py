@@ -2,68 +2,13 @@ import json
 import TP05
 from Liga import Liga
 import TP07
+import TP08
 
 with open("equipos_argentina.json", "r", encoding="utf-8") as f:
     datos = json.load(f)
 
 equiposArgentinos = datos["equipos"]
 liga_argentina = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
-
-def menu_filtrar_por_grafo(liga_argentina):
-    
-    # 1. Obtener la lista acumulada de jugadores
-    todos = liga_argentina.obtener_todos_los_jugadores()
-    grafo = TP07.GrafoFiltroAtributo()
-
-    print("\n==============================================")
-    print("   BÚSQUEDA Y FILTRADO POR GRAFO DE SIMILITUD")
-    print("==============================================")
-    print("1. Filtrar por Nacionalidad")
-    print("2. Filtrar por Posición")
-    print("3. Filtrar por Edad")
-    
-    opcion = input("\nSeleccioná el atributo a filtrar (1-3): ").strip()
-
-    atributo = None
-    if opcion == "1":
-        atributo = "nacionalidad"
-        valor = input("Ingresá la nacionalidad deseada (ej. Argentina, Uruguaya): ")
-    elif opcion == "2":
-        atributo = "posicion"
-        valor = input("Ingresá la posición deseada (ej. Delantero, Mediocampista): ")
-    elif opcion == "3":
-        atributo = "edad"
-        valor = input("Ingresá la edad deseada (ej. 25, 30): ")
-    else:
-        print("⚠️ Opción no válida.")
-        return
-
-    # 2. Construir el subgrafo con las elecciones del usuario
-    grafo.construir_subgrafo_por_atributo(todos, atributo, valor)
-
-    # 3. Consultar y mostrar los resultados generados en la red
-    red = grafo.obtener_red_filtrada()
-
-    if red:
-        print(f"\n==================================================")
-        print(f" RED DE JUGADORES FILTRADOS POR {atributo.upper()}: '{valor}'")
-        print(f" Total de Nodos Conectados: {len(red)}")
-        print(f"==================================================")
-        
-        for jug, conexiones in red:
-            if isinstance(jug, dict):
-                nombre = f"{jug.get('nombre')} {jug.get('apellido')}"
-                pos = jug.get('posicion', 'S/D')
-                nac = jug.get('nacionalidad', 'S/D')
-            else:
-                nombre = jug.nombre_completo
-                pos = jug.posicion
-                nac = jug.nacionalidad
-
-            print(f"• {nombre} ({pos} - {nac})")
-            print(f"   └── Conectado con otros {conexiones} jugadores del grupo.")
-    else:
-        print(f"\n❌ No se encontraron jugadores con {atributo} = '{valor}'.")
 
 def main():
     print("="*24)
@@ -77,8 +22,9 @@ def main():
         print("2. Listar todos los equipos")
         print("3. Buscar equipo por nombre (ABB)")
         print("4. Listar todos los equipos (ABB)")
-        print("5. Buscar jugadores")
-        print("6. Salir")
+        print("5. Buscar jugadores (grafos de similitud)")
+        print("6. Consultar jugadores cercanos por edad (BFS) y misma posición (DFS)")
+        print("7. Salir")
         print("\n(Consejo: Utiliza primero la opcion 2 para conocer los nombres de los equipos registrados)\n")
         
         opcion = input("\nSeleccioná una opción: ").strip()
@@ -108,10 +54,24 @@ def main():
                 print(f"• {eq['nombre']}")
 
         elif opcion == "5":
-            menu_filtrar_por_grafo(liga_argentina)
+            Liga.menu_filtrar_por_grafo(liga_argentina)
 
         elif opcion == "6":
-            print("\nSaliendo. Gracias por utilizar Futbolero ;) \n")
+            print("\n--- CONSULTA DE JUGADORES ---")
+            print("1. Buscar jugadores cercanos por edad (BFS)")
+            print("2. Buscar jugadores con la misma posición (DFS)")
+
+            sub_opcion = input("\nSeleccioná una opción: ").strip()
+
+            if sub_opcion == "1":
+                Liga.menu_consultar_cercanos(liga_argentina)
+            elif sub_opcion == "2":
+                Liga.menu_consultar_misma_posicion(liga_argentina)
+            else:
+                print("⚠️ Opción inválida. Intentá de nuevo.")
+        
+        elif opcion == "7":
+            print("¡Gracias por usar Futbolero! ¡Hasta la próxima!")
             break
         
         else:

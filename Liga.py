@@ -2,7 +2,8 @@ import json
 from Equipo import Equipo
 from TP03 import ArbolBinarioBusqueda 
 from TP06 import Heap
-from TP07 import GrafoFiltroAtributo
+import TP07
+import TP08
 import random
 
 
@@ -103,6 +104,144 @@ class Liga:
             plantel = equipo.get("plantel", [])
             todos.extend(plantel)
         return todos
+    
+    def menu_consultar_cercanos(liga_argentina):
+        todos = liga_argentina.obtener_todos_los_jugadores()
+        grafo = TP08.GrafoJugadores()
+
+        print("\n==============================================")
+        print("   BÚSQUEDA DE JUGADORES CERCANOS POR EDAD (BFS)")
+        print("==============================================")
+        
+        busqueda = input("Ingresá el nombre o apellido del jugador (ej. Cavani): ").strip()
+        max_niveles_str = input("Ingresá la cantidad máxima de niveles de cercanía (ej. 1, 2): ").strip()
+
+        try:
+            max_niveles = int(max_niveles_str)
+        except ValueError:
+            print("⚠️ Se usará el valor por defecto: 2 niveles.")
+            max_niveles = 2
+
+        # 1. Construir el grafo conectando edades con hasta 1 año de diferencia
+        grafo.construir_red_cercania_edad(todos, salto_maximo=1)
+
+        # 2. Ejecutar recorrido BFS
+        jugador_encontrado, resultados = grafo.buscar_cercanos_edad_bfs(busqueda, max_niveles)
+
+        if not jugador_encontrado:
+            print(f"\n❌ No se encontró ningún jugador que coincida con '{busqueda}' en la base de datos.")
+            return
+
+        ref = grafo.jugadores_map[jugador_encontrado]
+        edad_ref = ref.get('edad') if isinstance(ref, dict) else ref.edad
+
+        print(f"\n==================================================")
+        print(f" RED BFS DESDE: {jugador_encontrado} ({edad_ref} años)")
+        print(f"==================================================")
+
+        if resultados:
+            for nivel, jugadores in sorted(resultados.items()):
+                print(f"\n• Nivel {nivel} (a {nivel} salto/s de edad):")
+                for jug in jugadores:
+                    if isinstance(jug, dict):
+                        nombre = f"{jug.get('nombre')} {jug.get('apellido')}"
+                        edad = jug.get('edad', 'S/D')
+                    else:
+                        nombre = jug.nombre_completo
+                        edad = jug.edad
+                    print(f"   └── {nombre} ({edad} años)")
+        else:
+            print(f"\nℹ️ {jugador_encontrado} no tiene jugadores conectados dentro de {max_niveles} niveles.")
+
+    def menu_filtrar_por_grafo(liga_argentina):
+        
+        # 1. Obtener la lista acumulada de jugadores
+        todos = liga_argentina.obtener_todos_los_jugadores()
+        grafo = TP07.GrafoFiltroAtributo()
+
+        print("\n==============================================")
+        print("   BÚSQUEDA Y FILTRADO POR GRAFO DE SIMILITUD")
+        print("==============================================")
+        print("1. Filtrar por Nacionalidad")
+        print("2. Filtrar por Posición")
+        print("3. Filtrar por Edad")
+
+        opcion = input("\nSeleccioná el atributo a filtrar (1-3): ").strip()
+
+        atributo = None
+        if opcion == "1":
+            atributo = "nacionalidad"
+            valor = input("Ingresá la nacionalidad deseada (ej. Argentina, Uruguaya): ")
+        elif opcion == "2":
+            atributo = "posicion"
+            valor = input("Ingresá la posición deseada (ej. Delantero, Mediocampista): ")
+        elif opcion == "3":
+            atributo = "edad"
+            valor = input("Ingresá la edad deseada (ej. 25, 30): ")
+        
+        # 2. Construir el subgrafo con las elecciones del usuario
+        grafo.construir_subgrafo_por_atributo(todos, atributo, valor)
+
+        # 3. Consultar y mostrar los resultados generados en la red
+        red = grafo.obtener_red_filtrada()
+
+        if red:
+            print(f"\n==================================================")
+            print(f" RED DE JUGADORES FILTRADOS POR {atributo.upper()}: '{valor}'")
+            print(f" Total de Nodos Conectados: {len(red)}")
+            print(f"==================================================")
+            
+            for jug, conexiones in red:
+                if isinstance(jug, dict):
+                    nombre = f"{jug.get('nombre')} {jug.get('apellido')}"
+                    pos = jug.get('posicion', 'S/D')
+                    nac = jug.get('nacionalidad', 'S/D')
+                else:
+                    nombre = jug.nombre_completo
+                    pos = jug.posicion
+                    nac = jug.nacionalidad
+
+                print(f"• {nombre} ({pos} - {nac})")
+                print(f"   └── Conectado con otros {conexiones} jugadores del grupo.")
+        else:
+            print(f"\n❌ No se encontraron jugadores con {atributo} = '{valor}'.")
+            
+    def menu_consultar_misma_posicion(liga_argentina):
+        todos = liga_argentina.obtener_todos_los_jugadores()
+        grafo = TP08.GrafoJugadores()
+
+        print("\n==============================================")
+        print("   EXPLORACIÓN DE POSICIÓN EN PROFUNDIDAD (DFS)")
+        print("==============================================")
+        
+        busqueda = input("Ingresá el nombre o apellido del jugador referencia: ").strip()
+
+        # 1. Construir la red por posición
+        grafo.construir_red_posicion(todos)
+
+        # 2. Ejecutar recorrido DFS
+        jugador_encontrado, resultados = grafo.explorar_posicion_dfs(busqueda)
+
+        if not jugador_encontrado:
+            print(f"\n❌ No se encontró ningún jugador que coincida con '{busqueda}' en la base de datos.")
+            return
+
+        ref = grafo.jugadores_map[jugador_encontrado]
+        pos_ref = ref.get('posicion') if isinstance(ref, dict) else ref.posicion
+
+        print(f"\n==================================================")
+        print(f" RED DFS DESDE: {jugador_encontrado} (Posición: {pos_ref})")
+        print(f" Total de jugadores alcanzados en la rama: {len(resultados)}")
+        print(f"==================================================")
+
+        for jug in resultados:
+            if isinstance(jug, dict):
+                nombre = f"{jug.get('nombre')} {jug.get('apellido')}"
+                pos = jug.get('posicion', 'S/D')
+            else:
+                nombre = jug.nombre_completo
+                pos = jug.posicion
+            print(f"• {nombre} ({pos})")
 
 #liga = Liga("Liga Argentina", equiposArgentinos, len(equiposArgentinos))
 
