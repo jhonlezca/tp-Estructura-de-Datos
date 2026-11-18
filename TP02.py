@@ -13,7 +13,7 @@ def buscarEquipoPorNombre_lineal(lista_equipos, nombre_equipo):
                     equipo["nombre"], 
                     equipo["estadio"], 
                     equipo.get("zona"), 
-                    equipo.get("pos_campeonato"), 
+                    equipo.get("posicion"), 
                     equipo.get("partidos"), 
                     equipo.get("plantel")
                 )
@@ -41,7 +41,7 @@ def buscarEquipoPorNombre_binaria(lista_equipos, nombre_equipo):
                     equipo_actual["nombre"], 
                     equipo_actual["estadio"], 
                     equipo_actual.get("zona"), 
-                    equipo_actual.get("pos_campeonato"), 
+                    equipo_actual.get("posicion"), 
                     equipo_actual.get("partidos"), 
                     equipo_actual.get("plantel")
                 )

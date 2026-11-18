@@ -45,7 +45,7 @@ def main():
             liga_argentina.menu_posiciones()
         
         elif opcion == "5":
-            liga_argentina.menu_filtrar_jugadores()
+            liga_argentina.menu_filtrar_por_grafo()
 
         elif opcion == "6":
             liga_argentina.menu_jugadores_cercanos()

@@ -25,6 +25,7 @@ class Equipo:
         print(f"Nombre: {self._nombre}")
         print(f"Estadio: {self._estadio}")
         print(f"Zona: {self._zona}") 
+        print(f"Posición en el campeonato: {self._pos_campeonato}")
 
 # muestra el plantel del equipo, es decir, la lista de jugadores que pertenecen al equipo
 

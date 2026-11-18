@@ -46,7 +46,8 @@ class Liga:
 
     # Se encarga de buscar un equipo por su nombre y mostrar información del mismo
 
-    def buscarEquipoPorNombre(self, nombre_equipo):
+    def buscarEquipoPorNombre(self, nombre_equipo): # busqueda lineal
+        """Busca un equipo por nombre en la lista de equipos y muestra su información si lo encuentra."""
         nombre_buscar = nombre_equipo.strip().lower()
         
         for equipo in self.equipos:
@@ -56,7 +57,7 @@ class Liga:
                     equipo["nombre"], 
                     equipo["estadio"], 
                     equipo.get("zona"), 
-                    equipo.get("pos_campeonato"), 
+                    equipo.get("posicion"), 
                     equipo.get("partidos"), 
                     equipo.get("plantel")
                 )
@@ -68,14 +69,16 @@ class Liga:
         # Si recorrió todo el for y no lo encontró:
         print(f"\n❌ No se encontró el equipo '{nombre_equipo}'.")
     
-    def listarEquipos(self):
+    def listarEquipos(self): # LISTAR EQUIPOS DE MANERA LINEAL
         """Retorna la lista de equipos registrados en la liga"""
         return self.equipos
     
-    def buscarEquipoPorNombreArbol(self, nombre_equipo):
+    def buscarEquipoPorNombreArbol(self, nombre_equipo): # busqueda en arbol binario de busqueda
+        """Busca un equipo por nombre en el árbol binario de búsqueda y devuelve el equipo si lo encuentra, o None si no lo encuentra."""
         return self.arbol_equipos.buscar(nombre_equipo)
     
-    def listarEquiposArbol(self):
+    def listarEquiposArbol(self): # lista los equipos en orden alfabético usando el recorrido Inorder del árbol binario de búsqueda
+        """Devuelve una lista de equipos ordenados alfabéticamente usando el recorrido Inorder"""
         return self.arbol_equipos.recorrido_inorder()
     
     # recibe una lista de  tuplas de  equipos con su posicion en el campeonato  y los inserta en la tabla de posiciones
@@ -119,7 +122,7 @@ class Liga:
         print("   BÚSQUEDA DE JUGADORES CERCANOS POR EDAD (BFS)")
         print("==============================================")
         
-        busqueda = input("Ingresá el nombre o apellido del jugador (ej. Cavani): ").strip()
+        busqueda = input("Ingresá el nombre o apellido del jugador (ej. Merentiel): ").strip()
         max_niveles_str = input("Ingresá la cantidad máxima de niveles de cercanía (ej. 1, 2): ").strip()
 
         try:
@@ -299,8 +302,22 @@ class Liga:
             equipo_hallado = self.buscarEquipoPorNombreArbol(nombre)
 
             if equipo_hallado:
-                print(f"\n¡Encontrado!: {equipo_hallado.nombre}")
-                print(f"Estadio: {equipo_hallado.estadio}")
+                nombre = equipo_hallado["nombre"] if isinstance(equipo_hallado, dict) else equipo_hallado.nombre
+                estadio = equipo_hallado["estadio"] if isinstance(equipo_hallado, dict) else equipo_hallado.estadio
+                zona = equipo_hallado.get("zona") if isinstance(equipo_hallado, dict) else equipo_hallado.zona
+                plantel = equipo_hallado.get("plantel") if isinstance(equipo_hallado, dict) else equipo_hallado.plantel
+                print(f"\n¡Encontrado!: {nombre}")
+                print("\nDatos del equipo:")
+                print(f"Nombre: {nombre}")
+                print(f"Estadio: {estadio}")
+                print(f"Zona: {zona}")
+                print(f"Plantel:")
+                for j in plantel:
+                    if isinstance(j, dict):
+                        dorsal = f"#{j.get('dorsal')}" if j.get('dorsal') else "#-"
+                        print(f"  • {dorsal:<4} {j.get('nombre')} {j.get('apellido')} - {j.get('posicion')} ({j.get('edad')} años)")
+                    else:
+                        print(f"  • {j}")
             else:
                 print("❌ Equipo no encontrado en el árbol ABB.")
         
@@ -328,10 +345,12 @@ class Liga:
         
         if jugadores_encontrados:
             print(f"\n=== JUGADORES DE {nacionalidad.upper()} ({len(jugadores_encontrados)}) ===")
-            for jugador in jugadores_encontrados:
-                print(jugador)
-        else:
-            print(f"\n❌ No se encontraron jugadores con nacionalidad '{nacionalidad}'.")
+            for j in jugadores_encontrados:
+                if isinstance(j, dict):
+                    dorsal = f"#{j.get('dorsal')}" if j.get('dorsal') else "#-"
+                    print(f"• {dorsal:<4} {j.get('nombre')} {j.get('apellido')} - {j.get('posicion')} ({j.get('edad')} años)")
+                else:
+                    print(f"• {j}")
     
     def heap_posiciones_zona_A(self):
         """Crea un heap con los equipos de la zona A y sus posiciones"""
@@ -384,6 +403,26 @@ class Liga:
         
         elif opcion == "2":
             print("Saliendo del menú de nacionalidades...")
+        
+        else:
+            print("⚠️ Opción inválida. Intentá de nuevo.")
+            
+    def menu_jugadores_cercanos(self):
+        print("\n--- MENÚ DE JUGADORES CERCANOS ---")
+        print("1. Buscar jugadores cercanos por edad (BFS)")
+        print("2. Consultar jugadores de la misma posición (DFS)")
+        print("3. Salir del menú de jugadores cercanos")
+
+        opcion = input("\nSeleccioná una opción: ").strip()
+
+        if opcion == "1":
+            self.menu_consultar_cercanos()
+        
+        elif opcion == "2":
+            self.menu_consultar_misma_posicion()
+        
+        elif opcion == "3":
+            print("Saliendo del menú de jugadores cercanos...")
         
         else:
             print("⚠️ Opción inválida. Intentá de nuevo.")
