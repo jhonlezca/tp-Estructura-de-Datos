@@ -11,7 +11,7 @@
       "estadio": "José María Minella",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 14
       },
       "partidos": {
         "ultimo_partido": {
@@ -70,7 +70,7 @@
       "estadio": "Diego Armando Maradona",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 2
       },
       "partidos": {
         "ultimo_partido": {
@@ -129,7 +129,7 @@
       "estadio": "Monumental José Fierro",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 11
       },
       "partidos": {
         "ultimo_partido": {
@@ -188,7 +188,7 @@
       "estadio": "Florencio Solá",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 12
       },
       "partidos": {
         "ultimo_partido": {
@@ -247,7 +247,7 @@
       "estadio": "Claudio Fabián Tapia",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 5
       },
       "partidos": {
         "ultimo_partido": {
@@ -306,7 +306,7 @@
       "estadio": "Julio César Villagra",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 6
       },
       "partidos": {
         "ultimo_partido": {
@@ -365,7 +365,7 @@
       "estadio": "Alberto José Armando",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 2
       },
       "partidos": {
         "ultimo_partido": {
@@ -424,7 +424,7 @@
       "estadio": "Alfredo Terrera",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 15
       },
       "partidos": {
         "ultimo_partido": {
@@ -483,7 +483,7 @@
       "estadio": "Norberto Tito Tomaghello",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 4
       },
       "partidos": {
         "ultimo_partido": {
@@ -542,7 +542,7 @@
       "estadio": "Guillermo Laza",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 14
       },
       "partidos": {
         "ultimo_partido": {
@@ -601,7 +601,7 @@
       "estadio": "Jorge Luis Hirschi",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 12
       },
       "partidos": {
         "ultimo_partido": {
@@ -660,7 +660,7 @@
       "estadio": "Ciudad de Río Cuarto",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 15
       },
       "partidos": {
         "ultimo_partido": {
@@ -719,7 +719,7 @@
       "estadio": "Victor Antonio Legrotaglie",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 8
       },
       "partidos": {
         "ultimo_partido": {
@@ -778,7 +778,7 @@
       "estadio": "Juan Carmelo Zerillo",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 3
       },
       "partidos": {
         "ultimo_partido": {
@@ -837,7 +837,7 @@
       "estadio": "Tomás Adolfo Ducó",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 8
       },
       "partidos": {
         "ultimo_partido": {
@@ -896,7 +896,7 @@
       "estadio": "Libertadores de América",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 7
       },
       "partidos": {
         "ultimo_partido": {
@@ -927,7 +927,7 @@
           "dorsal": 35,
           "posicion": "Defensor",
           "nacionalidad": "Argentina",
-          "edad": 17
+          "edad": 18
         },
         {
           "id_jugador": "CAI_003",
@@ -955,7 +955,7 @@
       "estadio": "Bautista Gargantini",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 7
       },
       "partidos": {
         "ultimo_partido": {
@@ -1014,7 +1014,7 @@
       "estadio": "Juan Domingo Perón",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 1
       },
       "partidos": {
         "ultimo_partido": {
@@ -1073,7 +1073,7 @@
       "estadio": "Ciudad de Lanús",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 5
       },
       "partidos": {
         "ultimo_partido": {
@@ -1132,7 +1132,7 @@
       "estadio": "Marcelo Alberto Bielsa",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 6
       },
       "partidos": {
         "ultimo_partido": {
@@ -1191,7 +1191,7 @@
       "estadio": "Ciudad de Vicente Lopez",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 10
       },
       "partidos": {
         "ultimo_partido": {
@@ -1250,7 +1250,7 @@
       "estadio": "Presidente Juan Domingo Perón",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 13
       },
       "partidos": {
         "ultimo_partido": {
@@ -1309,7 +1309,7 @@
       "estadio": "Mâs Monumental",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 4
       },
       "partidos": {
         "ultimo_partido": {
@@ -1368,7 +1368,7 @@
       "estadio": "Gigante de Arrollito",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 1
       },
       "partidos": {
         "ultimo_partido": {
@@ -1427,7 +1427,7 @@
       "estadio": "Pedro Bidegain",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 11
       },
       "partidos": {
         "ultimo_partido": {
@@ -1486,7 +1486,7 @@
       "estadio": "Eva Perón de Junín",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 9
       },
       "partidos": {
         "ultimo_partido": {
@@ -1545,7 +1545,7 @@
       "estadio": "Mario Alberto Kempes",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 13
       },
       "partidos": {
         "ultimo_partido": {
@@ -1604,7 +1604,7 @@
       "estadio": "José Dellagiovanna",
       "zona": "B",
       "campeonato": {
-        "posicion": null
+        "posicion": 10
       },
       "partidos": {
         "ultimo_partido": {
@@ -1663,7 +1663,7 @@
       "estadio": "15 de Abril",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 9
       },
       "partidos": {
         "ultimo_partido": {
@@ -1722,7 +1722,7 @@
       "estadio": "José Amalfitani",
       "zona": "A",
       "campeonato": {
-        "posicion": null
+        "posicion": 3
       },
       "partidos": {
         "ultimo_partido": {
