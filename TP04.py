@@ -1,8 +1,6 @@
 # Generar casos donde el BST del TP3 quede desbalanceado (ej: insertar datos ya ordenados).
+
 # Implementar AVL con las rotaciones correspondientes.
-
-
-
 
 class NodoAVL:
     def __init__(self, equipo):

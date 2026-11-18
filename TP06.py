@@ -17,7 +17,8 @@ class Heap:
             self.heap[indice], self.heap[padre] = (self.heap[padre], self.heap[indice])
             indice = padre
     
-
+    def obtener_todos(self):
+        return self.heap[:]
 
     def obtener_minimo(self):
         if not self.heap:
